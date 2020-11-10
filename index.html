@@ -16,34 +16,41 @@
         <link rel="stylesheet" href="style.css">
 
     </head>
-    <body>
+    <body id="body">
+        
+        <!-- Nav -->
+        <nav class="nav-header fixed-top">
+            <div class="d-flex justify-content-center flex-wrap" style="padding: 6px;">
+                <div class="col-sml-2">
+                    <a>
+                        <b type="button" class="button-under-animated" onclick="goToHomePage()">
+                            Home
+                        </b>
+                    </a>                        
+                </div>
+                <div class="col-sml-2">
+                    <a>
+                        <b type="button" class="button-under-animated" onclick="scrollToAboutMe()">
+                            About Me
+                        </b>
+                    </a>
+                </div>
+                <div class="col-sml-2">
+                    <b type="button" class="button-under-animated" href="#">Projects</b>
+                </div>
+                <div class="col-sml-2">
+                    <b type="button" class="button-under-animated" href="#">Contact</b>
+                </div>
+            </div>
+        </nav>
         
         <!-- Page -->
         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-            
-            <!-- Nav -->
-            <nav class="nav-header">
-                <div class="d-flex justify-content-center flex-wrap" style="padding: 6px;">
-                    <div class="col-sml-2">
-                        <b type="button" class="button-under-animated" href="#">Home</b>
-                    </div>
-                    <div class="col-sml-2">
-                        <b type="button" class="button-under-animated" href="#">About Me</b>
-                    </div>
-                    <div class="col-sml-2">
-                        <b type="button" class="button-under-animated" href="#">Projects</b>
-                    </div>
-                    <div class="col-sml-2">
-                        <b type="button" class="button-under-animated" href="#">Contact</b>
-                    </div>
-                </div>
-            </nav>
-            
+                                
             <!-- Main Text Area -->
             <main role="main" class="text-center">
                 
-                <img src="Resources/Images/Face-1.png" class="img-fluid" alt="Main Page Logo" style="max-width: 11%; min-width: 8%; margin-top: 10vh;">
-<!--                <img src="Resources/Images/hughtcthenry.png" class="img-fluid" alt="Main Page Logo" style="max-width: 8%; min-width: 5%; margin-top: 12vh;">-->
+                <img src="Resources/Images/Face-1.png" class="img-fluid" alt="Main Page Logo" style="max-width: 11%; min-width: 8%; margin-top: 16vh;">
                 
                 <!-- Title -->
                 <h1 class="display-4" style="margin-top: 4vh; font-family:'Courier New'">Hugh Henry</h1>
@@ -78,10 +85,22 @@
                 </div>
                 
                 <!-- Resume Container -->
-                <div class="container" style="margin-top: 36vh; width: 60%; padding-left: 35px;">
+                <div id="resume" class="container" style="margin-top: 36vh; width: 60%; padding-left: 35px;">
+                    
+                    <div id="about-me-lb" class="linebreak"></div>
+                    
+                    <!-- About Me -->
+                    <h3 id="about-me-title" style="text-align: left; margin-top: 60px;">About Me</h3>
+                    <div id="about-me-text" style="margin-top: 20px; text-align: left;">
+                        <p class="lead">
+                            I am currently undertaking a Bachelor’s degree in Software Engineering (Honours) and a Bachelor’s degree in Commerce (majoring in Business Analytics) at Monash University. I enjoy physical activities such as walking my dogs, squash and yoga. I spend a lot of time on personal projects such as researching and developing basic machine learning applications and building mobile applications. In particular, I have an interest in dynamic programming and the development, training and applications of neural networks.
+                        </p>
+                    </div>
+                    
+                    <div id="educ-lb" class="linebreak"></div>
                     
                     <!-- Education and Training -->
-                    <h3 style="text-align: left;">Education and Training</h3>
+                    <h3 style="text-align: left; margin-top: 60px;">Education and Training</h3>
                     <div class="row" style="margin-top: 20px; text-align: left;">                        
                         <div class="col-6 col-md-4">
                             <p class="lead" style="font-weight: bold;">
@@ -94,7 +113,7 @@
                             </p> 
                         </div>
                     </div>
-                    <div class="row" style="margin-top: 20px; text-align: left;">                        
+                    <div class="row" style="margin-top: 12px; text-align: left;">                        
                         <div class="col-6 col-md-4" style="font-weight: bold;">
                             <p class="lead" style="font-weight: bold;">
                                 2018 - Present
@@ -107,14 +126,95 @@
                         </div>
                     </div>
                     
+                    <div id="prevwork-lb" class="linebreak"></div>
+                    
                     <!-- Previous Working Experience -->
                     <h3 style="margin-top: 60px; text-align: left;">Previous Working Experience</h3>
+                    <div style="text-align: left;">
+                        
+                        <!-- UniMelb -->
+                        <p class="lead" style="font-weight: bold; margin-top: 28px;">
+                            July 2020 - Aug 2020 Melbourne eResearch Group – Intern
+                        </p>
+                        <dp>
+                            <p class="lead" style="margin-left: 32px;">
+                                - &ensp; Linked the application with a local database and implemented RSA security to protect the privacy of respondents
+                            </p>
+                            <p class="lead" style="margin-left: 32px;">
+                                - &ensp; Worked independently to complete a proof-of-project iOS application to be used to collect data through surveys from people diagnosed with Polycystic Ovarian Syndrome
+                            </p>                                
+                        </dp>
+                        
+                        <!-- Officeworks -->
+                        <p class="lead" style="font-weight: bold; margin-top: 28px;">
+                            Jan 2018 - Present 	Team Member at Officeworks Mentone - Casual Employee
+                        </p>
+                        <dp>
+                            <p class="lead" style="margin-left: 32px;">
+                                - &ensp; Worked mainly in a sales and customer service role
+                            </p>
+                            <p class="lead" style="margin-left: 32px;">
+                                - &ensp; Provided customers with creative solutions for their technological problems, including: Helping them with mobile phones, computers, networking products, cables and iOS devices
+                            </p>
+                            <p class="lead" style="margin-left: 32px;">
+                                - &ensp; Worked closely with a large and diverse team, constantly communicating with one another in person and via radio headsets
+                            </p>
+                        </dp>
+                        
+                        <!-- Maths Tutoring -->
+                        <p class="lead" style="font-weight: bold; margin-top: 28px;">
+                            Mar 2018 - Mar 2019	Mathematics Tutor
+                        </p>
+                        <dp>
+                            <p class="lead" style="margin-left: 32px;">
+                                - &ensp; VCE Units 1 &#38; 2 Mathematical Methods Tutor
+                            </p>
+                        </dp>
+                        
+                        <!-- Cielo -->
+                        <p class="lead" style="font-weight: bold; margin-top: 28px;">
+                            Nov 2017 - Oct 2018	Cielo Gourmet Pizza Pasta - Casual Employee
+                        </p>
+                        <dp>
+                            <p class="lead" style="margin-left: 32px;">
+                                - &ensp; Worked with a large team in a variety of roles, including preparing food, serving customers, taking phone orders and managing multiple online ordering systems
+                            </p>
+                            <p class="lead" style="margin-left: 32px;">
+                                - &ensp; Communicated with other team members and customers clearly in a loud environment
+                            </p>
+                            <p class="lead" style="margin-left: 32px;">
+                                - &ensp; Worked competently and managed many orders at peak periods
+                            </p>
+                        </dp>
+                        
+                        <!-- Squash Volunteer -->
+                        <p class="lead" style="font-weight: bold; margin-top: 28px;">
+                            Oct 2016 - Present	Regular Volunteer Squash (sports) Coach - The Bentleigh Club
+                        </p>
+                        <dp>
+                            <p class="lead" style="margin-left: 32px;">
+                                - &ensp; Coaching players ranging from young children to adults [ages 4 - 50]       
+                            </p>
+                            <p class="lead" style="margin-left: 32px;">
+                                - &ensp; Inspiring the less focused players, especially the teenagers, using incentives and continual encouragement
+                            </p>
+                            <p class="lead" style="margin-left: 32px;">
+                                - &ensp; Co-manager of The Bentleigh Club Squash Group Facebook page
+                            </p>
+                            <p class="lead" style="margin-left: 32px;">
+                                - &ensp; Member of The Bentleigh Club Squash committee        
+                            </p>
+                        </dp>
+                        
+                    </div>   
+                    
+                    <div id="prevwork-lb" class="linebreak"></div>
                     
                 </div>
-                
-                <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>          
-                
             </main>
         </div>
+        
+        <!-- Javascript -->
+        <script src="main.js"></script>        
     </body>
 </html>

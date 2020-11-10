@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #262626;
 }
@@ -8,6 +12,21 @@ main {
 
 nav {
     background-color: #262626;
+}
+
+dp {
+    margin-top: 18px;
+}
+
+.linebreak {
+    height: 1px;
+    background-color: #fff;
+    margin-top: 60px;
+}
+
+.lead {
+    margin-top: 8px;
+    margin-bottom: 2px;
 }
 
 /* Buttons With Underline*/
