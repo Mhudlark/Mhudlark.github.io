@@ -16,30 +16,31 @@
         <link rel="stylesheet" href="style.css">
 
     </head>
-    <body id="body">
+    <body id="body" onload="pageLoad()">
         
         <!-- Nav -->
         <nav class="nav-header fixed-top">
             <div class="d-flex justify-content-center flex-wrap" style="padding: 6px;">
                 <div class="col-sml-2">
                     <a>
-                        <b type="button" class="button-under-animated" onclick="goToHomePage()">
+                        <b type="button" class="button-under-animated" onclick="goToPage('index.html')">
                             Home
                         </b>
                     </a>                        
                 </div>
                 <div class="col-sml-2">
                     <a>
-                        <b type="button" class="button-under-animated" onclick="scrollToAboutMe()">
+                        <b type="button" class="button-under-animated" onclick="goToPage('index.html', 'about-me-lb')">
                             About Me
                         </b>
                     </a>
                 </div>
                 <div class="col-sml-2">
-                    <b type="button" class="button-under-animated" href="#">Projects</b>
-                </div>
-                <div class="col-sml-2">
-                    <b type="button" class="button-under-animated" href="#">Contact</b>
+                    <a>
+                        <b type="button" class="button-under-animated" onclick="goToPage('projects.html')">
+                            Projects
+                        </b>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -57,7 +58,7 @@
                 <!-- Contact -->
                 <p class="lead" style="margin-top: 6px; font-size: 18px;">hughcthenry@gmail.com</p>
                 <!-- Social Media Logos/Links -->
-                <div class="d-flex justify-content-center flex-wrap" style="margin-top: 6px;">
+                <div class="d-flex justify-content-center flex-wrap" style="margin-top: 10px;">
                     <!-- Github -->
                     <div class="col-sml-2" style="margin-left: 8px; margin-right: 8px;">
                         <a data-testid="linkElement" href="https://github.com/Mhudlark" target="_blank" rel="noopener">
@@ -213,6 +214,11 @@
                 </div>
             </main>
         </div>
+        
+        <!-- Bootstrap Javascript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         
         <!-- Javascript -->
         <script src="main.js"></script>        
