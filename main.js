@@ -1,29 +1,38 @@
-function scrollToAboutMe() {
-    scrollToId('about-me-lb');
+function pageLoad() {
+    // Scrolling to set page position
+    let id = sessionStorage.getItem("pagePositionElemID");
+    scrollToId(id);
+    // Updating set page position to null
+    setPagePosition();
+}
+
+function setPagePosition(id=null) {
+    sessionStorage.setItem("pagePositionElemID", id);
 }
 
 function scrollToId(id) {
-    document.getElementById(id).scrollIntoView(true);
+    if(id != null && id != "null")
+        document.getElementById(id).scrollIntoView(true);
+    else
+        document.getElementById("body").scrollIntoView(true);
 }
 
-function goToHomePage() {
-    let filename = (window.location.href).split('\\').pop().split('/').pop();
-    if(filename == "index.html")
+function goToPage(fileName, id="body") {
+    let currentFileName = getFileName(window.location.href);
+    // If on current page: scroll to position
+    if(currentFileName == fileName)
     {
-         scrollToId("body");   
+         scrollToId(id);
     }
+    // If on another page: pass in page position on that page and change page
     else
     {
-        window.location.href = "index.html";
+        window.location.href = fileName;
+        setPagePosition(id);
     }
 }
 
-function saveToLocalStorage(id, value) {
-    if (value != "on") {
-        localStorage.setItem(id.slice(0, -5), value);
-    }
-    else {
-        localStorage.setItem(id.slice(0, -5), document.getElementById(id).checked);
-    }
+function getFileName(filepath) {
+    return (filepath).split('\\').pop().split('/').pop();
 }
 

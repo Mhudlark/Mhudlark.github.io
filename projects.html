@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="Hugh Henry">
+
+        <title>Home</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body id="body">
+        
+        <!-- Nav -->
+        <nav class="nav-header fixed-top">
+            <div class="d-flex justify-content-center flex-wrap" style="padding: 6px;">
+                <div class="col-sml-2">
+                    <a>
+                        <b type="button" class="button-under-animated" onclick="goToPage('index.html')">
+                            Home
+                        </b>
+                    </a>                        
+                </div>
+                <div class="col-sml-2">
+                    <a>
+                        <b type="button" class="button-under-animated" onclick="goToPage('index.html', 'about-me-lb')">
+                            About Me
+                        </b>
+                    </a>
+                </div>
+                <div class="col-sml-2">
+                    <a>
+                        <b type="button" class="button-under-animated" onclick="goToPage('projects.html')">
+                            Projects
+                        </b>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Page -->
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                                
+            <!-- Main Text Area -->
+            <main role="main" class="text-center" onload="">
+                
+                <!--  -->
+                <div id="resume" class="container" style="margin-top: 60px; width: 60%; padding-left: 35px; text-align: left;">
+                </div>                 
+               
+            </main>
+        </div>
+        
+        <!-- Javascript -->
+        <script src="main.js"></script>
+        <script src="projects.js"></script>
+    </body>
+</html>
