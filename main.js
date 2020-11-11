@@ -1,23 +1,5 @@
-<<<<<<< HEAD
-function pageLoad() {
-    // Scrolling to set page position
-    try {
-        let id = sessionStorage.getItem("pagePositionElemID");
-        scrollToId(id);        
-        // Updating set page position to null
-        setPagePosition();
-    }
-    catch(err) {
-        console.log("Failed to access session storage.");
-    }
-}
-
-function setPagePosition(id=null) {
-    sessionStorage.setItem("pagePositionElemID", id);
-=======
 function scrollToAboutMe() {
     scrollToId('about-me-lb');
->>>>>>> parent of ff28c65... Added Projects File (Unfilled)
 }
 
 function scrollToId(id) {
