@@ -16,31 +16,30 @@
         <link rel="stylesheet" href="style.css">
 
     </head>
-    <body id="body" onload="pageLoad()">
+    <body id="body">
         
         <!-- Nav -->
         <nav class="nav-header fixed-top">
             <div class="d-flex justify-content-center flex-wrap" style="padding: 6px;">
                 <div class="col-sml-2">
                     <a>
-                        <b type="button" class="button-under-animated" onclick="goToPage('index.html')">
+                        <b type="button" class="button-under-animated" onclick="goToHomePage()">
                             Home
                         </b>
                     </a>                        
                 </div>
                 <div class="col-sml-2">
                     <a>
-                        <b type="button" class="button-under-animated" onclick="goToPage('index.html', 'about-me-lb')">
+                        <b type="button" class="button-under-animated" onclick="scrollToAboutMe()">
                             About Me
                         </b>
                     </a>
                 </div>
                 <div class="col-sml-2">
-                    <a>
-                        <b type="button" class="button-under-animated" onclick="goToPage('projects.html')">
-                            Projects
-                        </b>
-                    </a>
+                    <b type="button" class="button-under-animated" href="#">Projects</b>
+                </div>
+                <div class="col-sml-2">
+                    <b type="button" class="button-under-animated" href="#">Contact</b>
                 </div>
             </div>
         </nav>
@@ -58,7 +57,7 @@
                 <!-- Contact -->
                 <p class="lead" style="margin-top: 6px; font-size: 18px;">hughcthenry@gmail.com</p>
                 <!-- Social Media Logos/Links -->
-                <div class="d-flex justify-content-center flex-wrap" style="margin-top: 10px;">
+                <div class="d-flex justify-content-center flex-wrap" style="margin-top: 6px;">
                     <!-- Github -->
                     <div class="col-sml-2" style="margin-left: 8px; margin-right: 8px;">
                         <a data-testid="linkElement" href="https://github.com/Mhudlark" target="_blank" rel="noopener">

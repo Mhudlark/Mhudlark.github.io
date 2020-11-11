@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function pageLoad() {
     // Scrolling to set page position
     try {
@@ -13,31 +14,34 @@ function pageLoad() {
 
 function setPagePosition(id=null) {
     sessionStorage.setItem("pagePositionElemID", id);
+=======
+function scrollToAboutMe() {
+    scrollToId('about-me-lb');
+>>>>>>> parent of ff28c65... Added Projects File (Unfilled)
 }
 
 function scrollToId(id) {
-    if(id != null && id != "null")
-        document.getElementById(id).scrollIntoView(true);
-    else
-        document.getElementById("body").scrollIntoView(true);
+    document.getElementById(id).scrollIntoView(true);
 }
 
-function goToPage(fileName, id="body") {
-    let currentFileName = getFileName(window.location.href);
-    // If on current page: scroll to position
-    if(currentFileName == fileName)
+function goToHomePage() {
+    let filename = (window.location.href).split('\\').pop().split('/').pop();
+    if(filename == "index.html")
     {
-         scrollToId(id);
+         scrollToId("body");   
     }
-    // If on another page: pass in page position on that page and change page
     else
     {
-        window.location.href = fileName;
-        setPagePosition(id);
+        window.location.href = "index.html";
     }
 }
 
-function getFileName(filepath) {
-    return (filepath).split('\\').pop().split('/').pop();
+function saveToLocalStorage(id, value) {
+    if (value != "on") {
+        localStorage.setItem(id.slice(0, -5), value);
+    }
+    else {
+        localStorage.setItem(id.slice(0, -5), document.getElementById(id).checked);
+    }
 }
 
