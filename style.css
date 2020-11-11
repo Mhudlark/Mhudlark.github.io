@@ -60,5 +60,8 @@ dp {
 #lah-carousel-inner {
     max-width: 100%;
     max-height: 100%;
-/*  max-height: 200px !important;*/
+}
+
+.project {
+    width: 60%;
 }

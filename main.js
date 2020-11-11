@@ -1,7 +1,13 @@
 function pageLoad() {
     // Scrolling to set page position
-    let id = sessionStorage.getItem("pagePositionElemID");
-    scrollToId(id);
+    try {
+        console.log("Trying");
+//        let id = sessionStorage.getItem("pagePositionElemID");
+//        scrollToId(id);
+    }
+    catch(err) {
+        console.log("Failure");
+    }
     // Updating set page position to null
     setPagePosition();
 }
