@@ -72,8 +72,8 @@ dp {
 }
 
 .index-title {
-    margin-top: 36px; 
-    font-size: 50px;
+    margin-top: 32px; 
+    font-size: 54px;
     font-family:'Courier New';
 }
 
@@ -113,7 +113,7 @@ dp {
     .index-title {
         margin-top: 60px;
         font-size: 64px;
-        font-family: "Courier New", Courier;
+        font-family: default;
     }
     
     .index-email {
