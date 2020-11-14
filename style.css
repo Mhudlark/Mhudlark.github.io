@@ -85,15 +85,15 @@ dp {
 }
 
 /* Mobile */
-@media only screen and (max-width: 600px) {    
+@media only screen and (max-width: 800px) {    
     
     .text-centre {
         padding-left: 10px;
     }
     
     .index-main-logo {
-        max-width: 28%; 
-        min-width: 22%; 
+        max-width: 32%; 
+        min-width: 26%; 
         margin-top: 140px;
     }
     
