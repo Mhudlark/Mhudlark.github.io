@@ -36,3 +36,5 @@ function getFileName(filepath) {
     return (filepath).split('\\').pop().split('/').pop();
 }
 
+console.log("Width: " + screen.width + ", Height: " + screen.height);
+document.getElementById("debug").innerHTML = "Width: " + screen.width + ", Height: " + screen.height;
