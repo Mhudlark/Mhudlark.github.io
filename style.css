@@ -107,12 +107,12 @@ dp {
     .index-main-logo {
         max-width: 32%; 
         min-width: 26%; 
-        margin-top: 20vw;
+        margin-top: 30vw;
     }
     
     .index-title {
-        margin-top: 60px;
-        font-size: 64px;
+        margin-top: 100px;
+        font-size: 84px;
         font-family: default;
     }
     
