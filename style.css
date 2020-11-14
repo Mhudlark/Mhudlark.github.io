@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: rgb(38, 38, 38);
+    background-color: rgb(40, 40, 40);
 }
 
 main {
@@ -11,7 +11,7 @@ main {
 }
 
 nav {
-    background-color: rgb(38, 38, 38);
+    background-color: rgb(40, 40, 40);
 }
 
 dp {
@@ -35,7 +35,7 @@ dp {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
-  background-color: rgba(38, 38, 38, 255);
+  background-color: rgb(40, 40, 40);
   display: inline-block;
   padding: 15px 20px;
   position: relative;
@@ -118,7 +118,4 @@ dp {
 /* Safari */
 @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
 { @media {
-    #safari { 
-        background-color: rgb(38, 38, 38);
-    }
 }}
