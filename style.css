@@ -63,11 +63,6 @@ dp {
 /*  max-height: 200px !important;*/
 }
 
-.logo-link {
-    max-width: 2vw; 
-    min-width: 1.5vw;
-}
-
 .index-main-logo {
     max-width: 11%; 
     min-width: 8%; 
@@ -84,8 +79,17 @@ dp {
     font-size: 18px;
 }
 
+.logo-link {
+    max-width: 2vw; 
+    min-width: 1.5vw;
+}
+
 /* Mobile */
 @media only screen and (max-width: 600px) {    
+    
+    .text-centre {
+        padding-left: 10px;
+    }
     
     .index-main-logo {
         max-width: 28%; 
@@ -98,21 +102,23 @@ dp {
         font-size: 44px;
         font-family:'Courier New';
     }
-
-    .logo-link {
-        max-width: 6vw; 
-        min-width: 4.5vw;
-    }
     
     .index-email {
         margin-top: 2px; 
         font-size: 16px;
     }
+
+    .logo-link {
+        max-width: 6vw; 
+        min-width: 4.5vw;
+    }      
     
 }
 
 /* Safari */
 @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
 { @media {
-    
+    #safari { 
+        background-color: rgb(38, 38, 38);
+    }
 }}
