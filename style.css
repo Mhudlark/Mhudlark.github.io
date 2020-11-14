@@ -131,9 +131,13 @@ dp {
     }
     
     #resume {
-        margin-top: 42vh; 
-        width: 86%; 
-        padding-left: 35px;
+        margin-top: 50vh; 
+        width: 94%; 
+        padding-left: 30px;
+    }
+    
+    .container {
+        font-size: 30px;
     }
     
 }
