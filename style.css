@@ -85,6 +85,12 @@ dp {
     min-width: 1.5vw;
 }
 
+#resume {
+    margin-top: 36vh; 
+    width: 60%; 
+    padding-left: 35px;
+}
+
 /* Mobile */
 @media only screen and (max-device-width: 600px) {    
     
@@ -110,13 +116,23 @@ dp {
     
     .index-email {
         margin-top: 2px; 
-        font-size: 28px;
+        font-size: 34px;
     }
 
     .logo-link {
         max-width: 6vw; 
         min-width: 4.5vw;
-    }      
+    }
+    
+    #pdf-mark {
+        max-width: 5vw;
+    }
+    
+    #resume {
+        margin-top: 42vh; 
+        width: 86%; 
+        padding-left: 35px;
+    }
     
 }
 
