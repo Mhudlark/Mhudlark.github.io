@@ -82,6 +82,11 @@ dp {
     min-width: 1.5vw;
 }
 
+#pdf-mark {
+    max-width: 1.6vw;
+    height: auto;
+}
+
 .text-container {
     margin-top: 36vh; 
     width: 60%; 
@@ -104,6 +109,25 @@ text-subheading {
 
 .text-text {
     margin-top: 20px; 
+}
+
+.carousel-base {
+    height: 624px; 
+    width: 325px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;    
+}
+
+.carousel {
+    border: 6px solid rgb(64,64,64);
+    border-left: 50px solid rgb(64,64,64);
+    border-right: 50px solid rgb(64,64,64);
+}
+
+. carousel-base-img {
+    height: 862px; 
+    width: 448px;
 }
 
 /* Mobile */
