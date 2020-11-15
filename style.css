@@ -112,8 +112,8 @@ text-subheading {
 }
 
 .carousel-base {
-    height: 624px; 
-    width: 325px;
+    height: 431px; 
+    width: 224px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;    
@@ -121,8 +121,6 @@ text-subheading {
 
 .carousel {
     border: 6px solid rgb(64,64,64);
-    border-left: 50px solid rgb(64,64,64);
-    border-right: 50px solid rgb(64,64,64);
 }
 
 . carousel-base-img {
