@@ -82,7 +82,7 @@ dp {
     min-width: 1.5vw;
 }
 
-.resume-container {
+.text-container {
     margin-top: 36vh; 
     width: 60%; 
     padding-left: 35px;
@@ -99,10 +99,10 @@ dp {
     margin-top: 80px;
 }
 
-.resume-subheading {
+text-subheading {
 }
 
-.resume-text {
+.text-text {
     margin-top: 20px; 
 }
 
@@ -151,12 +151,12 @@ dp {
         margin-top: 100px;
     }
     
-    .resume-subheading {
-        font-size: 52px;
+    .text-subheading {
+        font-size: 58px;
     }
     
-    .resume-container {
-        font-size: 42px;
+    .text-container {
+        font-size: 50px;
         margin-top: 50vh; 
         min-width: 96%;
         width: 96%; 
