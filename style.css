@@ -18,12 +18,6 @@ dp {
     margin-top: 18px;
 }
 
-.linebreak {
-    height: 1px;
-    background-color: rgb(255, 255, 255);
-    margin-top: 60px;
-}
-
 .lead {
     margin-top: 8px;
     margin-bottom: 2px;
@@ -87,10 +81,32 @@ dp {
     min-width: 1.5vw;
 }
 
-#resume {
+.resume-container {
     margin-top: 36vh; 
     width: 60%; 
     padding-left: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    text-align: left;
+}
+
+.linebreak {
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 80px;    
+    margin-top: 80px;
+}
+
+.resume-subheading {
+}
+
+.resume-text {
+    margin-top: 20px; 
+}
+
+.lead {
+    font-size: inherit;
 }
 
 /* Mobile */
@@ -130,14 +146,14 @@ dp {
         max-width: 5vw;
     }
     
-    #resume {
-        margin-top: 50vh; 
-        width: 96%; 
-        padding-left: 12px;
-    }
-    
-    .container {
+    .resume-container {
         font-size: 30px;
+        margin-top: 50vh; 
+        min-width: 96%;
+        width: 96%; 
+        padding-left: 22px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
 }
