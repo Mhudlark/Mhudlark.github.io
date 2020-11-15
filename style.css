@@ -147,14 +147,14 @@ text-subheading {
     }
     
     .index-main-logo {
-        max-width: 40%; 
-        min-width: 34%; 
-        margin-top: 32vw;        
+        max-width: 46%; 
+        min-width: 38%; 
+        margin-top: 34vw;        
         margin-left: -28px;
     }
     
     .index-title {
-        margin-top: 110px;
+        margin-top: 116px;
         font-size: 120px;
         font-family: default;
     }
@@ -185,6 +185,7 @@ text-subheading {
     }
     
     .text-container  {
+        margin-top: 40px;
         font-size: 48px;
         min-width: 96%;
         width: 96%;
