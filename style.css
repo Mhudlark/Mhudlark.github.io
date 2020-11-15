@@ -201,6 +201,11 @@ text-subheading {
         margin-top: 20px;
         padding-left: -15px;
     }
+    
+    .carousel-control-prev-icon {
+        width: 4%;
+        height: auto;
+    }
 }
 
 /* Tablet */
