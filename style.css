@@ -202,8 +202,8 @@ text-subheading {
         padding-left: -15px;
     }
     
-    .carousel-control {
-        width: 20%;
+    .carousel-control-prev-icon {
+        width: 50px;
         height: auto;
     }
 }
