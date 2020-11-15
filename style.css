@@ -137,13 +137,7 @@ text-subheading {
 }
 
 /* Mobile */
-@media only screen and (max-device-width: 600px) {    
-    
-    .carousel-base {
-        height: 539px; 
-        width: 280px;
-        margin-top: 20px;    
-    }
+@media only screen and (max-device-width: 600px) {  
     
     .button-under-animated {
         font-size: 38px;
@@ -199,8 +193,13 @@ text-subheading {
         padding-left: 12px;
         margin-left: auto;
         margin-right: auto;
-    }
+    }      
     
+    .carousel-base {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;    
+    }
 }
 
 /* Tablet */
