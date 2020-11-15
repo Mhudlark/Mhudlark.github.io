@@ -146,6 +146,10 @@ dp {
         max-width: 5vw;
     }
     
+    .resume-subheading {
+        font-size: 36px;
+    }
+    
     .resume-container {
         font-size: 36px;
         margin-top: 50vh; 
