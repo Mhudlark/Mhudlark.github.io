@@ -203,8 +203,8 @@ text-subheading {
     }
     
     .carousel-control-prev-icon {
-        width: 50px;
-        height: auto;
+        width: 200px;
+        height: 200px;
     }
 }
 
