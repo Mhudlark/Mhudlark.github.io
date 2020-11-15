@@ -127,13 +127,14 @@ dp {
     
     .index-title {
         margin-top: 100px;
-        font-size: 90px;
+        font-size: 92px;
         font-family: default;
     }
     
     .index-email {
         margin-top: 2px; 
         font-size: 36px;
+        margin-bottom: 4px;
     }
 
     .logo-link {
