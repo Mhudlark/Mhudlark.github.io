@@ -147,8 +147,8 @@ text-subheading {
     }
     
     .index-main-logo {
-        max-width: 36%; 
-        min-width: 30%; 
+        max-width: 40%; 
+        min-width: 34%; 
         margin-top: 32vw;        
         margin-left: -28px;
     }
@@ -161,7 +161,7 @@ text-subheading {
     
     .index-email {
         margin-top: 2px; 
-        font-size: 40px;
+        font-size: 46px;
         margin-bottom: 14px;
     }
 
@@ -194,7 +194,7 @@ text-subheading {
     }  
     
     #resume.text-container {
-        margin-top: 50vh; 
+        margin-top: 54vh; 
     }
 
     .carousel-base {
@@ -246,12 +246,12 @@ text-subheading {
     }
 
     .logo-link {
-        max-width: 4.2vw; 
-        min-width: 2.6vw;
+        max-width: 5vw; 
+        min-width: 3.6vw;
     }
     
     #pdf-mark {
-        max-width: 3.5vw;
+        max-width: 4vw;
         height: auto;
     }
     
