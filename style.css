@@ -88,7 +88,6 @@ dp {
 }
 
 .text-container {
-    margin-top: 36vh; 
     width: 60%; 
     padding-left: 35px;
     margin-left: auto;
@@ -98,7 +97,7 @@ dp {
 }
 
 #resume.text-container {
-    margin-top: 36vh;
+    margin-top: 38vh;
 }
 
 .linebreak {
@@ -187,14 +186,17 @@ text-subheading {
     
     .text-container  {
         font-size: 48px;
-        margin-top: 50vh; 
         min-width: 96%;
         width: 96%;
         padding-left: 12px;
         margin-left: auto;
         margin-right: auto;
-    }      
+    }  
     
+    #resume.text-container {
+        margin-top: 50vh; 
+    }
+
     .carousel-base {
         width: 90%;
         height: auto;
@@ -203,6 +205,11 @@ text-subheading {
     }
     
     .carousel-control-prev-icon {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .carousel-control-next-icon {
         width: 200px;
         height: 200px;
     }
@@ -259,7 +266,6 @@ text-subheading {
     
     .text-container  {
         font-size: 34px;
-        margin-top: 40vh; 
         min-width: 84%;
         width: 84%;
         padding-left: 12px;
@@ -267,6 +273,9 @@ text-subheading {
         margin-right: auto;
     }
     
+    #resume.text-container {
+        margin-top: 40vh; 
+    }    
 }
 
 /* Safari */
