@@ -40,3 +40,6 @@ console.log("Width: " + screen.width + ", Height: " + screen.height);
 try { document.getElementById("debug").innerHTML = "Width: " + screen.width + ", Height: " + screen.height; }
 catch(TypeError) { console.log("Error: No debug HTML element available to display height & width."); }
 
+try { document.getElementById("debug").innerHTML = "Resume Font Size: " + document.getElementsByClassName("resume-container")[0].style.fontSize; }
+catch(TypeError) { console.log("Error: Styling debug error"); }
+
