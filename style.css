@@ -144,7 +144,7 @@ text-subheading {
     }
     
     #pdf-mark {
-        max-width: 4.6vw;
+        max-width: 4.2vw;
         height: auto;
     }
     
@@ -158,7 +158,7 @@ text-subheading {
     }
     
     .text-container  {
-        font-size: 44px;
+        font-size: 48px;
         margin-top: 50vh; 
         min-width: 96%;
         width: 96%;
