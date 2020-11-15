@@ -97,6 +97,10 @@ dp {
     text-align: left;
 }
 
+#resume.text-container {
+    margin-top: 36vh;
+}
+
 .linebreak {
     height: 1px;
     background-color: rgb(255, 255, 255);
@@ -112,8 +116,12 @@ text-subheading {
 }
 
 .carousel-base {
+/*
     height: 431px; 
     width: 224px;
+*/
+    height: 539px; 
+    width: 280px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;    
@@ -130,6 +138,12 @@ text-subheading {
 
 /* Mobile */
 @media only screen and (max-device-width: 600px) {    
+    
+    .carousel-base {
+        height: 539px; 
+        width: 280px;
+        margin-top: 20px;    
+    }
     
     .button-under-animated {
         font-size: 38px;
