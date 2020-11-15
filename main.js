@@ -37,4 +37,6 @@ function getFileName(filepath) {
 }
 
 console.log("Width: " + screen.width + ", Height: " + screen.height);
-document.getElementById("debug").innerHTML = "Width: " + screen.width + ", Height: " + screen.height;
+try { document.getElementById("debug").innerHTML = "Width: " + screen.width + ", Height: " + screen.height; }
+catch(TypeError) { console.log("Error: No debug HTML element available to display height & width."); }
+
