@@ -109,7 +109,7 @@ text-subheading {
 
 
 /* Mobile */
-@media only screen and (max-device-width: 600px or device-width: 600px) {    
+@media only screen and (max-device-width: 600px) {    
     
     .button-under-animated {
         font-size: 38px;
