@@ -147,16 +147,16 @@ text-subheading {
     }
     
     .linebreak {
-        margin-bottom: 100px;    
-        margin-top: 100px;
+        margin-bottom: 125px;    
+        margin-top: 125px;
     }
     
     .text-subheading {
-        font-size: 64px;
+        font-size: 72px;
     }
     
     .text-container  {
-        font-size: 46px;
+        font-size: 42px;
         margin-top: 50vh; 
         min-width: 96%;
         width: 96%;
