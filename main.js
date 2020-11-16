@@ -1,32 +1,32 @@
 function pageLoad() {
     // Scrolling to set page position
-    let id = sessionStorage.getItem("pagePositionElemID");
+    let id = window.sessionStorage.getItem("pagePositionElemID");
     scrollToId(id);
     // Updating set page position to null
     setPagePosition();
 }
 
 function setPagePosition(id=null) {
-    sessionStorage.setItem("pagePositionElemID", id);
+    window.sessionStorage.setItem("pagePositionElemID", id);
 }
 
 function scrollToId(id) {
-    if(id != null && id != "null")
+    if(id != null && id != "null") {
         document.getElementById(id).scrollIntoView(true);
-    else
+    }
+    else {
         document.getElementById("body").scrollIntoView(true);
+    }
 }
 
 function goToPage(fileName, id="body") {
     let currentFileName = getFileName(window.location.href);
     // If on current page: scroll to position
-    if(currentFileName == fileName)
-    {
+    if(currentFileName == fileName) {
          scrollToId(id);
     }
     // If on another page: pass in page position on that page and change page
-    else
-    {
+    else {
         window.location.href = fileName;
         setPagePosition(id);
     }
@@ -37,9 +37,11 @@ function getFileName(filepath) {
 }
 
 console.log("Width: " + screen.width + ", Height: " + screen.height);
-try { document.getElementById("debug").innerHTML = "Width: " + screen.width + ", Height: " + screen.height; }
-catch(TypeError) { console.log("Error: No debug HTML element available to display height & width."); }
+try { 
+    document.getElementById("debug").innerHTML = "Width: " + screen.width + ", Height: " + screen.height; 
+}
+catch(err) { 
+    console.log("Error: No debug HTML element available to display height & width."); 
+}
 
-try { document.getElementById("debug").innerHTML = "Resume Font Size: " + document.getElementsByClassName("resume-container")[0].style.fontSize; }
-catch(TypeError) { console.log("Error: Styling debug error"); }
 
