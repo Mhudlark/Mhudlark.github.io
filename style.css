@@ -88,6 +88,7 @@ dp {
 }
 
 .text-container {
+    margin-top: 40px;
     width: 60%; 
     padding-left: 35px;
     margin-left: auto;
@@ -98,6 +99,10 @@ dp {
 
 #resume.text-container {
     margin-top: 38vh;
+}
+
+#projects.text-container {
+    margin-top: 100px;
 }
 
 .linebreak {
@@ -115,10 +120,6 @@ text-subheading {
 }
 
 .carousel-base {
-/*
-    height: 431px; 
-    width: 224px;
-*/
     height: 539px; 
     width: 280px;
     margin-left: auto;
@@ -266,6 +267,7 @@ text-subheading {
     }
     
     .text-container  {
+        margin-top: 40px;
         font-size: 34px;
         min-width: 84%;
         width: 84%;
