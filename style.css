@@ -1,141 +1,3 @@
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background-color: rgb(40, 40, 40);
-}
-
-main {
-    color: rgb(255, 255, 255);
-}
-
-nav {
-    background-color: rgb(40, 40, 40);
-}
-
-dp {
-    margin-top: 18px;
-}
-
-.lead {
-    font-size: inherit;
-    margin-top: 8px;
-    margin-bottom: 2px;
-}
-
-/* Buttons With Underline*/
-.button-under-animated {
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.15em;
-    background-color: rgb(40, 40, 40);
-    display: inline-block;
-    padding: 15px 20px;
-    position: relative;
-    font-size: 20px;
-}
-.button-under-animated:after {    
-    background: none repeat scroll 0 0 rgba(255, 255, 255, 0);
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: rgb(255, 255, 255);
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-.button-under-animated:hover:after { 
-    width: 100%; 
-    left: 0; 
-}
-
-#lah-carousel-inner {
-    max-width: 100%;
-    max-height: 100%;
-/*  max-height: 200px !important;*/
-}
-
-.index-main-logo {
-    max-width: 11%; 
-    min-width: 8%; 
-    margin-top: 120px;
-    margin-left: -14px;
-}
-
-.index-title {
-    margin-top: 32px; 
-    font-size: 54px;
-    font-family:'Courier New';
-}
-
-.index-email {
-    margin-top: 6px; 
-    font-size: 20px;
-}
-
-.logo-link {
-    max-width: 2vw; 
-    min-width: 1.5vw;
-}
-
-#pdf-mark {
-    max-width: 1.6vw;
-    height: auto;
-}
-
-.text-container {
-    margin-top: 40px;
-    width: 60%; 
-    padding-left: 35px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 20px;
-    text-align: left;
-}
-
-#resume.text-container {
-    margin-top: 38vh;
-}
-
-#projects.text-container {
-    margin-top: 100px;
-}
-
-.linebreak {
-    height: 1px;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 80px;    
-    margin-top: 80px;
-}
-
-text-subheading {
-}
-
-.text-text {
-    margin-top: 20px; 
-}
-
-.carousel-base {
-    height: 539px; 
-    width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;    
-}
-
-.carousel {
-    border: 6px solid rgb(64,64,64);
-}
-
-. carousel-base-img {
-    height: 862px; 
-    width: 448px;
-}
-
 /* Tablet */
 /*@media only screen and (max-device-width: 1200px) {   */
 @media only screen and (max-width: 1200px) {    
@@ -287,3 +149,141 @@ text-subheading {
 @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
 { @media {
 }}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(40, 40, 40);
+}
+
+main {
+    color: rgb(255, 255, 255);
+}
+
+nav {
+    background-color: rgb(40, 40, 40);
+}
+
+dp {
+    margin-top: 18px;
+}
+
+.lead {
+    font-size: inherit;
+    margin-top: 8px;
+    margin-bottom: 2px;
+}
+
+/* Buttons With Underline*/
+.button-under-animated {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    background-color: rgb(40, 40, 40);
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    font-size: 20px;
+}
+.button-under-animated:after {    
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0);
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.button-under-animated:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+#lah-carousel-inner {
+    max-width: 100%;
+    max-height: 100%;
+/*  max-height: 200px !important;*/
+}
+
+.index-main-logo {
+    max-width: 11%; 
+    min-width: 8%; 
+    margin-top: 120px;
+    margin-left: -14px;
+}
+
+.index-title {
+    margin-top: 32px; 
+    font-size: 54px;
+    font-family:'Courier New';
+}
+
+.index-email {
+    margin-top: 6px; 
+    font-size: 20px;
+}
+
+.logo-link {
+    max-width: 2vw; 
+    min-width: 1.5vw;
+}
+
+#pdf-mark {
+    max-width: 1.6vw;
+    height: auto;
+}
+
+.text-container {
+    margin-top: 40px;
+    width: 60%; 
+    padding-left: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    text-align: left;
+}
+
+#resume.text-container {
+    margin-top: 38vh;
+}
+
+#projects.text-container {
+    margin-top: 100px;
+}
+
+.linebreak {
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 80px;    
+    margin-top: 80px;
+}
+
+text-subheading {
+}
+
+.text-text {
+    margin-top: 20px; 
+}
+
+.carousel-base {
+    height: 539px; 
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;    
+}
+
+.carousel {
+    border: 6px solid rgb(64,64,64);
+}
+
+. carousel-base-img {
+    height: 862px; 
+    width: 448px;
+}
