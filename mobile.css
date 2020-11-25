@@ -1,0 +1,86 @@
+/* Mobile */
+/*@media only screen and (max-device-width: 600px) {  */
+@media only screen and (max-width: 600px){  
+    
+    .button-under-animated {
+        font-size: 42px;
+    }
+    
+    .text-centre {
+        padding-left: 10px;
+    }
+    
+    .index-main-logo {
+        max-width: 46%; 
+        min-width: 38%; 
+        margin-top: 34vw;        
+        margin-left: -28px;
+    }
+    
+    .index-title {
+        margin-top: 116px;
+        font-size: 120px;
+        font-family: default;
+    }
+    
+    .index-email {
+        margin-top: 2px; 
+        font-size: 50px;
+        margin-bottom: 16px;
+    }
+
+    .logo-link {
+        max-width: 7vw;
+        min-width: 5vw;
+    }
+    
+    #pdf-mark {
+        max-width: 4.2vw;
+        height: auto;
+    }
+    
+    .linebreak {
+        margin-bottom: 150px;    
+        margin-top: 150px;
+    }
+    
+    .text-subheading {
+        font-size: 70px;
+    }
+    
+    .text-container  {
+        margin-top: 40px;
+        font-size: 54px;
+        min-width: 96%;
+        width: 98%;
+        padding-left: 12px;
+        margin-left: auto;
+        margin-right: auto;
+    }  
+    
+    #resume.text-container {
+        margin-top: 54vh; 
+    }
+
+    .carousel-base {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+        padding-left: -15px;
+    }
+    
+    .carousel-control-prev-icon {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .carousel-control-next-icon {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Safari */
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+{ @media {
+}}

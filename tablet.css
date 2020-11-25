@@ -1,0 +1,64 @@
+/* Tablet */
+/*@media only screen and (max-device-width: 1200px) and (min-device-width: 601px){   */
+@media only screen and (max-width: 1200px) and (min-width: 601px){   
+    
+    .button-under-animated {
+        font-size: 32px;
+    }
+    
+    .text-centre {
+        padding-left: 10px;
+    }
+    
+    .index-main-logo {
+        max-width: 23%; 
+        min-width: 18%; 
+        margin-top: 24vw;        
+        margin-left: -28px;
+    }
+    
+    .index-title {
+        margin-top: 100px;
+        font-size: 100px;
+        font-family: default;
+    }
+    
+    .index-email {
+        margin-top: 0px; 
+        font-size: 30px;
+        margin-bottom: 14px;
+    }
+
+    .logo-link {
+        max-width: 5vw; 
+        min-width: 3.6vw;
+    }
+    
+    #pdf-mark {
+        max-width: 4vw;
+        height: auto;
+    }
+    
+    .linebreak {
+        margin-bottom: 150px;    
+        margin-top: 150px;
+    }
+    
+    .text-subheading {
+        font-size: 50px;
+    }
+    
+    .text-container  {
+        margin-top: 40px;
+        font-size: 34px;
+        min-width: 84%;
+        width: 84%;
+        padding-left: 12px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #resume.text-container {
+        margin-top: 40vh; 
+    }    
+}
