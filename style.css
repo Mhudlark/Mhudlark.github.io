@@ -137,8 +137,8 @@ text-subheading {
 }
 
 /* Tablet */
-/*@media only screen and (max-device-width: 1200px) {   */
-@media only screen and (max-width: 1200px) or (max-device-width: 1200px) {    
+@media only screen and (max-device-width: 1200px) {   
+/*@media only screen and (max-width: 1200px) {    */
     
     .button-under-animated {
         font-size: 32px;
@@ -202,8 +202,8 @@ text-subheading {
 }
 
 /* Mobile */
-/*@media only screen and (max-device-width: 600px) {  */
-@media only screen and (max-width: 600px) or (max-device-width: 600px) {  
+@media only screen and (max-device-width: 600px) {  
+/*@media only screen and (max-width: 600px){  */
     
     .button-under-animated {
         font-size: 42px;
@@ -253,7 +253,7 @@ text-subheading {
     
     .text-container  {
         margin-top: 40px;
-        font-size: 64px;
+        font-size: 54px;
         min-width: 96%;
         width: 98%;
         padding-left: 12px;
