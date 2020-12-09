@@ -36,12 +36,12 @@ function getFileName(filepath) {
     return (filepath).split('\\').pop().split('/').pop();
 }
 
-console.log("Width: " + screen.width + ", Height: " + screen.height);
-try { 
-    document.getElementById("debug").innerHTML = "Width: " + screen.width + ", Height: " + screen.height; 
-}
-catch(err) { 
-    console.log("Error: No debug HTML element available to display height & width."); 
-}
+//console.log("Width: " + screen.width + ", Height: " + screen.height);
+//try { 
+//    document.getElementById("debug").innerHTML = "Width: " + screen.width + ", Height: " + screen.height; 
+//}
+//catch(err) { 
+//    console.log("Error: No debug HTML element available to display height & width."); 
+//}
 
 
