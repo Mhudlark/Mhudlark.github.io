@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmhudlark_github=self.webpackChunkmhudlark_github||[]).push([[216],{7793:function(e,a,n){n.r(a);var t=n(7294);a.default=function(){return t.createElement("main",{className:"main"},t.createElement("h1",{className:"heading"},"Hello, I am a heading"),t.createElement("h2",{className:"subheading"},"...and I am a subheading"))}}}]);
+//# sourceMappingURL=component---src-pages-projects-index-js-baba2efa49964171c5bc.js.map
