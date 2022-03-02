@@ -1,0 +1,29 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: $navbar-height;
+	background-color: $gray-800;
+	z-index: $z-root-navbar;
+	padding: 0 20px;
+
+	@include bp($bp-s) {
+		gap: 12px;
+		height: $navbar-s-height;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		gap: 10px;
+
+		@include bp($bp-s) {
+			gap: 12px;
+		}
+	}
+}

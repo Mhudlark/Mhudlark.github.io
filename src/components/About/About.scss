@@ -1,0 +1,113 @@
+.about-container {
+	@include bp($bp-l) {
+		max-width: 1048px;
+	}
+
+	.title {
+		margin: 20px 0;
+	}
+
+	.subtitle {
+		margin: 64px 0 24px;
+
+		@include bp($bp-s) {
+			margin: 64px 0 32px;
+		}
+	}
+
+	.horizontal-line-break {
+		display: block;
+		height: 2px;
+		width: 100%;
+		border-radius: 2px;
+		background-color: $gray-300;
+		opacity: 0.4;
+		margin: 72px 0;
+
+		@include bp($bp-s, $bp-l) {
+			margin: 96px 0;
+		}
+	}
+
+	.role-date {
+		font-weight: bold;
+	}
+
+	.role-title {
+		font-weight: bold;
+	}
+
+	.previous-experience-container {
+		.experiences-container {
+			display: flex;
+			flex-direction: column;
+			gap: 48px;
+
+			@include bp($bp-s) {
+				gap: 72px;
+			}
+
+			.roles-container {
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+
+				.role {
+					display: flex;
+					flex-direction: column;
+					gap: 6px;
+
+					.date-title-container {
+						display: grid;
+						grid-template-columns: 110px 1fr;
+						column-gap: 32px;
+
+						@include bp($bp-s, $bp-m) {
+							grid-template-columns: 152px 1fr;
+							column-gap: 48px;
+						}
+
+						@include bp($bp-m, $bp-l) {
+							column-gap: 64px;
+						}
+
+						@include bp($bp-l) {
+							grid-template-columns: 228px 1fr;
+							column-gap: 64px;
+						}
+					}
+
+					.description-points-container {
+						padding-left: 24px;
+						list-style-type: disc;
+					}
+				}
+			}
+		}
+	}
+
+	.education-container {
+		.experiences-container {
+			display: flex;
+			flex-direction: column;
+			gap: 32px;
+
+			.experience {
+				display: grid;
+				grid-template-columns: 84px 1fr;
+				justify-content: space-between;
+				column-gap: 32px;
+
+				@include bp($bp-s, $bp-l) {
+					grid-template-columns: 152px 1fr;
+					column-gap: 48px;
+				}
+
+				@include bp($bp-l) {
+					grid-template-columns: 152px 1fr;
+					column-gap: 64px;
+				}
+			}
+		}
+	}
+}

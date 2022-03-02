@@ -1,0 +1,157 @@
+// ==========================================================================
+// BREAKPOINTS
+// ==========================================================================
+$bp-xl: 1440;
+$bp-l: 1280;
+$bp-m: 1024;
+$bp-s: 600;
+$bp-xs: 320;
+
+// ==========================================================================
+// COLOURS
+// ==========================================================================
+$black: #000000;
+$white: #ffffff;
+$gray-000: #fafbfc;
+$gray-100: #f6f8fa;
+$gray-200: #e1e4e8;
+$gray-300: #d1d5da;
+$gray-400: #8b929c;
+$gray-500: #6a737d;
+$gray-600: #586069;
+$gray-700: #444d56;
+$gray-800: #1f262c;
+$gray-900: #121518;
+
+$green-000: #d6fbe9;
+$green-100: #bbf9db;
+$green-200: #91f3c4;
+$green-300: #37dd8e;
+$green-400: #1cd27b;
+$green-500: #00c667;
+$green-600: #00a857;
+$green-700: #02934d;
+$green-800: #007b40;
+$green-900: #00592e;
+
+$blue-000: #f1f8ff;
+$blue-100: #dbedff;
+$blue-200: #c8e1ff;
+$blue-300: #79b8ff;
+$blue-400: #2188ff;
+$blue-500: #0366d6;
+$blue-600: #005cc5;
+$blue-700: #044289;
+$blue-800: #032f62;
+$blue-900: #05264c;
+
+$yellow-000: #fffdef;
+$yellow-100: #fffbdd;
+$yellow-200: #fff5b1;
+$yellow-300: #ffea7f;
+$yellow-400: #ffdf5d;
+$yellow-500: #ffd33d;
+$yellow-600: #f9c513;
+$yellow-700: #dbab09;
+$yellow-800: #b08800;
+$yellow-900: #735c0f;
+
+$orange-000: #fff8f2;
+$orange-100: #ffebda;
+$orange-200: #ffd1ac;
+$orange-300: #ffab70;
+$orange-400: #fb8532;
+$orange-500: #f66a0a;
+$orange-600: #e36209;
+$orange-700: #d15704;
+$orange-800: #c24e00;
+$orange-900: #a04100;
+
+$red-000: #fee8e3;
+$red-100: #ffd3c9;
+$red-200: #ffa48e;
+$red-300: #ff8a6d;
+$red-400: #ff7655;
+$red-500: #ff6038;
+$red-600: #f24418;
+$red-700: #e02d00;
+$red-800: #b92500;
+$red-900: #9b1f00;
+
+$pink-000: #ffeef8;
+$pink-100: #fedbf0;
+$pink-200: #f9b3dd;
+$pink-300: #f692ce;
+$pink-400: #ec6cb9;
+$pink-500: #ea4aaa;
+$pink-600: #d03592;
+$pink-700: #b93a86;
+$pink-800: #99306f;
+$pink-900: #6d224f;
+
+$purple-000: #f5f0ff;
+$purple-100: #e6dcfd;
+$purple-200: #d1bcf9;
+$purple-300: #b392f0;
+$purple-400: #8a63d2;
+$purple-500: #6f42c1;
+$purple-600: #5a32a3;
+$purple-700: #4c2888;
+$purple-800: #3a1d6e;
+$purple-900: #29134e;
+
+$brown-000: #2f1f1e;
+
+$box-shadow: #24292e29;
+
+// ==========================================================================
+// ICONS
+// ==========================================================================
+
+$logo-img: url(../images/hughtcthenry.svg);
+$github-icon: url(../images/github-icon.svg);
+$linkedIn-icon: url(../images/linkedIn-icon.svg);
+$spotify-icon: url(../images/spotify-icon.svg);
+$pdf-icon: url(../images/pdf-icon.svg);
+
+// ==========================================================================
+// SHAPES
+// ==========================================================================
+$right-angled-triangled-left: url(../images/right-angled-triangle-left.svg);
+$triangle-down: url(../images/triangle-down.svg);
+
+// ==========================================================================
+// IMAGES
+// ==========================================================================
+$satellite-button-image: url(/satellite-map-button-image.png);
+
+// ==========================================================================
+// TYPOGRAPHY
+// ==========================================================================
+// Default body text (paragraphs, lists, etc)
+
+// ==========================================================================
+// Z-INDEX
+// ==========================================================================
+
+// Overlay components
+$z-modal: 9501;
+$z-modal-backdrop: 9500;
+$z-toast-banner: 9000;
+// Layout
+$z-root-navbar: 8000;
+$z-root-content: auto;
+// Page
+$z-page-header: 7000;
+$z-page-footer: 6000;
+// Components
+$z-geocoder: 1500;
+$z-password-requirements: 1410;
+$z-tooltip: 1400;
+$z-card: 1000;
+
+// ==========================================================================
+// NAVBAR
+// ==========================================================================
+$navbar-height: 54px;
+$navbar-s-height: 80px;
