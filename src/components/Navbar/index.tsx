@@ -1,9 +1,15 @@
 import * as React from 'react';
-import './Navbar.scss';
+import './styles.scss';
 import textContent from '../../data/textContent';
-import NavbarItem from '../NavbarItem/NavbarItem';
+import NavbarItem from '../NavbarItem';
 
-const Navbar = ({ onHomeClick, onAboutClick, onProjectsClick }) => {
+interface Props {
+	onHomeClick: () => void;
+	onAboutClick: () => void;
+	onProjectsClick: () => void;
+}
+
+const Navbar = ({ onHomeClick, onAboutClick, onProjectsClick }: Props) => {
 	return (
 		<nav className="navbar">
 			<ul>

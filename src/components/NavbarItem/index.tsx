@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './NavbarItem.scss';
+import './styles.scss';
 
 const NavbarItem = ({ title, onClick, disabled = false }) => {
 	return (
