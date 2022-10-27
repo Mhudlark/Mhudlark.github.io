@@ -1,0 +1,55 @@
+.navbar-item {
+	position: relative;
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	padding: 6px 8px;
+	color: $white;
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 20px;
+	letter-spacing: 0.06em;
+
+	@include bp($bp-s) {
+		font-size: 32px;
+		line-height: 36px;
+		letter-spacing: 0.1em;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		height: 2px;
+		width: 0;
+		left: 50%;
+		background-color: $white;
+		transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	}
+
+	&:hover {
+		&:after {
+			width: 100%;
+			left: 0;
+		}
+	}
+
+	&.disabled {
+		cursor: default;
+		color: $gray-300;
+		text-decoration: line-through;
+
+		&:hover {
+			&:after {
+				width: 0;
+				left: 50%;
+			}
+		}
+	}
+}
