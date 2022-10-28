@@ -1,21 +1,32 @@
+export enum IconLinkType {
+	github = 'github',
+	linkedIn = 'linkedIn',
+	spotify = 'spotify',
+	resume = 'resume',
+}
+
 const homeContent = {
 	title: 'Hugh Henry',
 	email: 'hughcthenry@gmail.com',
 	links: {
-		github: {
+		[IconLinkType.github]: {
 			name: 'Github',
+			className: 'github',
 			url: 'https://github.com/Mhudlark',
 		},
-		linkedIn: {
+		[IconLinkType.linkedIn]: {
 			name: 'LinkedIn',
+			className: 'linkedIn',
 			url: 'https://www.linkedin.com/in/hugh-henry-0ab6b31b5/',
 		},
-		spotify: {
+		[IconLinkType.spotify]: {
 			name: 'Spotify',
+			className: 'spotify',
 			url: 'https://open.spotify.com/user/truncusrumpus?si=wabDsx5pRFWq-sXKC0jVPw',
 		},
-		resume: {
+		[IconLinkType.resume]: {
 			name: 'Download CV',
+			className: 'resume',
 			url: '../data/about_files/Resume - Hugh Henry.pdf',
 		},
 	},
