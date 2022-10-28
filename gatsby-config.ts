@@ -14,6 +14,7 @@ const gatsbyRequiredRules = path.join(
 );
 
 const config: GatsbyConfig = {
+	pathPrefix: '/',
 	siteMetadata: {
 		title: `Hugh Henry`,
 		siteUrl: `https://www.hughcthenry.com`,
