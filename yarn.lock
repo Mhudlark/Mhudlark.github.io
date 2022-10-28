@@ -1096,6 +1096,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource/comfortaa/-/comfortaa-4.5.10.tgz#1635ef0b9f6ca245c8ccfeebca5cd36d5e753f80"
   integrity sha512-SrxPtznrGRFGhDziR0ozCFBcZ9kfJ5w3op12vtp3kLfSJke8CV8GXwZ1bVRaa7sN1uAbMXVCjKZZSaJofZcB/Q==
 
+"@fontsource/poppins@^4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@fontsource/poppins/-/poppins-4.5.10.tgz#44dbfeacb5d89efca5ad7ad6cc941b2ac1ee424b"
+  integrity sha512-oYZVHsnlwV3VWM1SE/m6SUxVh0QLk5+2wB+lBiXcI7N/0KVQWmV9YykaPqfJHBLvmdya+MAOnv+BQHeLU1vOOw==
+
 "@fontsource/roboto@^4.5.3":
   version "4.5.8"
   resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-4.5.8.tgz#56347764786079838faf43f0eeda22dd7328437f"
@@ -5264,6 +5269,17 @@ gatsby-plugin-eslint@^4.0.2:
   integrity sha512-fNLmtu8zgkrdifF9tnbtzmraJzSulhLo868FObCkArfjXB4PLxguxfBWKuJ6PMeZcSIIA4SgouCXHo2hoA12Pw==
   dependencies:
     webpack-merge "^5.8.0"
+
+gatsby-plugin-manifest@^4.24.0:
+  version "4.24.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-4.24.0.tgz#ad537b48f9fb8e7c93234945a4889ecf3c099f66"
+  integrity sha512-xlpJMNALNozeC0lIspQQZw68qi4pE1nhgPfsLiUtAc5CLihm2LNbGLAKcYHCXwudRHo5Hvp6Xi4VOwtMkRKwmQ==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    gatsby-core-utils "^3.24.0"
+    gatsby-plugin-utils "^3.18.0"
+    semver "^7.3.7"
+    sharp "^0.30.7"
 
 gatsby-plugin-page-creator@^4.24.1:
   version "4.24.1"

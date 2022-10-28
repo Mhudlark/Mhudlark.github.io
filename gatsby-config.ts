@@ -1,4 +1,17 @@
 import type { GatsbyConfig } from 'gatsby';
+import path from 'path';
+
+// Get paths of Gatsby's required rules, which as of writing is located at:
+// https://github.com/gatsbyjs/gatsby/tree/fbfe3f63dec23d279a27b54b4057dd611dce74bb/packages/
+// gatsby/src/utils/eslint-rules
+const gatsbyRequiredRules = path.join(
+	process.cwd(),
+	'node_modules',
+	'gatsby',
+	'dist',
+	'utils',
+	'eslint-rules',
+);
 
 const config: GatsbyConfig = {
 	siteMetadata: {
@@ -9,20 +22,21 @@ const config: GatsbyConfig = {
 		{
 			resolve: 'gatsby-plugin-eslint',
 			options: {
-				test: /\.js$|\.jsx$|\.ts$|\.tsx$/,
-				exclude: /(node_modules|.cache|public)/,
+				// Gatsby required rules directory
+				rulePaths: [gatsbyRequiredRules],
+				// Default settings that may be ommitted or customized
 				stages: ['develop'],
-				options: {
-					emitWarning: true,
-					failOnError: false,
-				},
+				extensions: ['js', 'jsx', 'ts', 'tsx'],
+				exclude: ['node_modules', 'bower_components', '.cache', 'public'],
+				// Any additional eslint-webpack-plugin options below
+				// ...
 			},
 		},
 		{
 			resolve: 'gatsby-plugin-sass',
 			options: {
 				sassOptions: {
-					includePaths: [`${__dirname}/src/styles`],
+					includePaths: [`${__dirname}/src/styles`, `${__dirname}/src/assets`],
 				},
 				additionalData: `@use 'variables' as *; @use 'mixins' as *;`,
 			},
@@ -33,6 +47,12 @@ const config: GatsbyConfig = {
 				name: `data`,
 				path: `${__dirname}/src/data/`,
 				ignore: [`**/\.*`], // ignore files starting with a dot
+			},
+		},
+		{
+			resolve: 'gatsby-plugin-manifest',
+			options: {
+				icon: 'src/assets/images/favicon.png',
 			},
 		},
 	],

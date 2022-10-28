@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './styles.scss';
-import aboutContent from '../../data/aboutContent';
+import aboutContent from '../../../data/content/about';
 
 const About = () => {
 	return (

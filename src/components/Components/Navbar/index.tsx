@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './styles.scss';
-import textContent from '../../data/textContent';
+import textContent from '../../../data/content/text';
 import NavbarItem from '../NavbarItem';
 
 interface Props {

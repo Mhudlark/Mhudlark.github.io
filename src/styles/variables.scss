@@ -12,6 +12,8 @@ $bp-xs: 320;
 // ==========================================================================
 $black: #000000;
 $white: #ffffff;
+$transparent: #ffffff00;
+
 $gray-000: #fafbfc;
 $gray-100: #f6f8fa;
 $gray-200: #e1e4e8;
@@ -108,23 +110,22 @@ $box-shadow: #24292e29;
 // ICONS
 // ==========================================================================
 
-$logo-img: url(../images/hughtcthenry.svg);
-$github-icon: url(../images/github-icon.svg);
-$linkedIn-icon: url(../images/linkedIn-icon.svg);
-$spotify-icon: url(../images/spotify-icon.svg);
-$pdf-icon: url(../images/pdf-icon.svg);
+$logo-img: url(~/src/assets/images/hughtcthenry.svg);
+$github-icon: url(~/src/assets/images/github-icon.svg);
+$linkedIn-icon: url(~/src/assets/images/linkedIn-icon.svg);
+$spotify-icon: url(~/src/assets/images/spotify-icon.svg);
+$pdf-icon: url(~/src/assets/images/pdf-icon.svg);
 
 // ==========================================================================
 // SHAPES
 // ==========================================================================
-$right-angled-triangled-left: url(../images/right-angled-triangle-left.svg);
-$triangle-down: url(../images/triangle-down.svg);
-$triangle-up: url(../images/triangle-up.svg);
+$right-angled-triangled-left: url(~/src/assets/images/right-angled-triangle-left.svg);
+$triangle-down: url(~/src/assets/images/triangle-down.svg);
+$triangle-up: url(~/src/assets/images/triangle-up.svg);
 
 // ==========================================================================
 // IMAGES
 // ==========================================================================
-$satellite-button-image: url(/satellite-map-button-image.png);
 
 // ==========================================================================
 // TYPOGRAPHY

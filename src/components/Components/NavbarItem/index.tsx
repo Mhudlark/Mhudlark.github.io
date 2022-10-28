@@ -1,7 +1,13 @@
 import * as React from 'react';
 import './styles.scss';
 
-const NavbarItem = ({ title, onClick, disabled = false }) => {
+interface Props {
+	title: string;
+	onClick: () => void;
+	disabled?: boolean;
+}
+
+const NavbarItem = ({ title, onClick, disabled = false }: Props) => {
 	return (
 		<button
 			type="button"
