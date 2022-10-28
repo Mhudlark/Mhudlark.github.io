@@ -12,6 +12,7 @@
 		"develop": "gatsby develop --port 3000 --open",
 		"start": "yarn develop",
 		"build": "gatsby build",
+		"deploy": "gatsby build && gh-pages -d public",
 		"serve": "gatsby serve",
 		"clean": "gatsby clean",
 		"typecheck": "tsc --noEmit",
