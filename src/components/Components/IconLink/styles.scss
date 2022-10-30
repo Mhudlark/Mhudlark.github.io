@@ -64,7 +64,7 @@
 
 	&.github {
 		@include mask-icon($github-icon) {
-			mask-position: 44% 42%;
+			mask-position: 46% 42%;
 		}
 	}
 
@@ -81,7 +81,7 @@
 
 	&.spotify {
 		@include mask-icon($spotify-icon) {
-			mask-position: 44% 46%;
+			mask-position: 46% 46%;
 		}
 	}
 

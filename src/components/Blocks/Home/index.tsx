@@ -11,7 +11,7 @@ const Home = () => {
 			<MainLogo />
 			<ul className="links-container">
 				{mapEnum(IconLinkType, type => (
-					<li>
+					<li key={type}>
 						<IconLink type={type} />
 					</li>
 				))}
