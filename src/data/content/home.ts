@@ -1,9 +1,4 @@
-export enum IconLinkType {
-	github = 'github',
-	linkedIn = 'linkedIn',
-	spotify = 'spotify',
-	resume = 'resume',
-}
+import { IconLinkType } from '../../components/Components/componentTypes';
 
 const homeContent = {
 	title: 'Hugh Henry',

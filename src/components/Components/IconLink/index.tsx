@@ -1,5 +1,6 @@
 import * as React from 'react';
-import homeContent, { IconLinkType } from '../../../data/content/home';
+import homeContent from '../../../data/content/home';
+import { IconLinkType } from '../componentTypes';
 import './styles.scss';
 
 interface Props {
@@ -17,12 +18,18 @@ const IconLink = ({ type }: Props) => {
 					rel: 'noopener',
 			  };
 
+	const typeClassName = homeContent.links[type].className;
+
 	return (
 		<a
-			className={`link ${homeContent.links[type].className}`}
+			className={`icon-link pushable ${typeClassName}`}
 			href={homeContent.links[type].url}
 			{...options}
-		/>
+		>
+			<div className="shadow" />
+			<div className="edge" />
+			<span className={`front ${typeClassName}`} />
+		</a>
 	);
 };
 
