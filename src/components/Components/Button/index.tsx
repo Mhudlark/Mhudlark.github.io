@@ -3,6 +3,8 @@ import './styles.scss';
 
 interface Props {
 	type?: ButtonType;
+	onClick?: () => void;
+	disabled?: boolean;
 }
 
 export enum ButtonType {
@@ -13,9 +15,17 @@ export enum ButtonType {
 	info = 'info',
 }
 
-const Button = ({ type = ButtonType.primary }: Props) => {
+const Button = ({
+	type = ButtonType.primary,
+	onClick = () => {},
+	disabled = false,
+}: Props) => {
 	return (
-		<button className={`pushable ${type}`} onClick={() => console.log('clicked')}>
+		<button
+			className={`pushable ${type} ${disabled ? 'disabled' : ''}`}
+			onClick={onClick}
+			disabled={disabled}
+		>
 			<div className="shadow" />
 			<div className="edge" />
 			<span className="front">Push me</span>
