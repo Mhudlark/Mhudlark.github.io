@@ -3,8 +3,10 @@
 	"version": "1.0.0",
 	"private": true,
 	"description": "hugh-henry-website",
-	"homepage": "https://Mhudlark.github.io",
-	"author": "Hugh Henry",
+	"author": {
+		"name": "Hugh Henry",
+		"url": "https://www.hughcthenry.com"
+	},
 	"keywords": [
 		"gatsby"
 	],
@@ -12,7 +14,6 @@
 		"develop": "gatsby develop --port 3000 --open",
 		"start": "yarn develop",
 		"build": "gatsby build",
-		"deploy": "gatsby build && gh-pages -d public",
 		"serve": "gatsby serve",
 		"clean": "gatsby clean",
 		"typecheck": "tsc --noEmit",
@@ -42,7 +43,6 @@
 		"eslint-config-airbnb-typescript": "^17.0.0",
 		"eslint-webpack-plugin": "^3.2.0",
 		"gatsby-plugin-eslint": "^4.0.2",
-		"gh-pages": "^3.2.3",
 		"prettier": "^2.5.1",
 		"typescript": "^4.8.3"
 	}
