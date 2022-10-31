@@ -1,5 +1,6 @@
 .hex-outer {
-	$height: 120px;
+	$background-color: $gray-000;
+	$height: 90px;
 	$width: calc(0.865 * $height);
 
 	$point-height: calc(0.25 * $height);
@@ -8,7 +9,7 @@
 	margin: calc(0.25 * $height) 0;
 	width: $width;
 	height: $core-height;
-	background-color: #6c6eee;
+	background-color: $background-color;
 	position: relative;
 
 	.hex-inner {
@@ -20,7 +21,7 @@
 		content: '';
 		width: 0;
 		height: 0;
-		border-bottom: $point-height solid #6c6eee;
+		border-bottom: $point-height solid $background-color;
 		border-left: calc(0.5 * $width) solid transparent;
 		border-right: calc(0.5 * $width) solid transparent;
 		position: absolute;
@@ -32,7 +33,7 @@
 		width: 0;
 		position: absolute;
 		bottom: -50%;
-		border-top: $point-height solid #6c6eee;
+		border-top: $point-height solid $background-color;
 		border-left: calc(0.5 * $width) solid transparent;
 		border-right: calc(0.5 * $width) solid transparent;
 	}
