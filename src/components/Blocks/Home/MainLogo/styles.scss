@@ -1,0 +1,90 @@
+@use 'sass:math';
+
+@mixin background-color($background-color) {
+	background-color: $background-color;
+	&:before {
+		border-bottom-color: $background-color;
+		transition: all 0.3s cubic-bezier(0.3, 0.7, 0.4, 1.5);
+	}
+	&:after {
+		border-top-color: $background-color;
+		transition: all 0.3s cubic-bezier(0.3, 0.7, 0.4, 1.5);
+	}
+}
+
+.logo.hex-outer {
+	$background-color: $gray-100;
+	$height: 250px;
+	$width: calc(0.865 * $height);
+
+	$point-height: calc(0.25 * $height);
+	$core-height: calc(0.5 * $height);
+
+	margin: calc(0.25 * $height) 0;
+	width: $width;
+	height: $core-height;
+	background-color: $background-color;
+	position: relative;
+
+	.hex-inner {
+		height: $core-height;
+		width: 100%;
+	}
+
+	&:before {
+		content: '';
+		width: 0;
+		height: 0;
+		border-bottom: $point-height solid $background-color;
+		border-left: calc(0.5 * $width) solid transparent;
+		border-right: calc(0.5 * $width) solid transparent;
+		position: absolute;
+		top: -50%;
+	}
+
+	&:after {
+		content: '';
+		width: 0;
+		position: absolute;
+		bottom: -50%;
+		border-top: $point-height solid $background-color;
+		border-left: calc(0.5 * $width) solid transparent;
+		border-right: calc(0.5 * $width) solid transparent;
+	}
+
+	&:hover {
+		transition: all 0.3s cubic-bezier(0.3, 0.7, 0.4, 1.5);
+		@include background-color($yellow-700);
+	}
+
+	&:active {
+		transition: all 20.3 cubic-bezier(0.3, 0.7, 0.4, 1.5);
+		@include background-color($yellow-800);
+	}
+
+	.logo-img-container {
+		height: 90%;
+		padding: 20px;
+		position: relative;
+
+		// @include bp($bp-s, $bp-m) {
+		// 	height: 40vh;
+		// 	max-height: 600px;
+		// 	max-width: 600vw;
+		// }
+
+		.logo-img {
+			position: absolute;
+			left: 0;
+			top: -25%;
+			bottom: -35%;
+			right: 0;
+			mask: $logo-img;
+			mask-repeat: no-repeat;
+			mask-position: center;
+			mask-size: contain;
+			background-color: $gray-800;
+			z-index: 1;
+		}
+	}
+}

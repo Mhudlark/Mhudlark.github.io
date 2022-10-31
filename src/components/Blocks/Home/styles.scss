@@ -12,11 +12,15 @@
 		align-items: center;
 		gap: 6px;
 
-		&.p1 {
+		&.h-offset-right {
 			margin-left: 84px;
 		}
 
-		&.odd {
+		&.h-offset-left {
+			margin-right: 84px;
+		}
+
+		&.v-offset {
 			margin-top: 0px;
 			height: calc(104px - 48px);
 		}

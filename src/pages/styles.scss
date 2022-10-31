@@ -38,14 +38,14 @@
 		padding: 72px 32px 64px;
 
 		@include bp($bp-s, $bp-l) {
-			padding: 96px 64px;
-			padding-top: min(96px, max(10vh, 32px));
+			padding: 72px 64px;
+			padding-top: min(72px, max(10vh, 32px));
 		}
 
-		@include bp($bp-l) {
-			padding: 96px 128px;
-			padding-top: min(128px, max(10vh, 32px));
-		}
+		// @include bp($bp-l) {
+		// 	padding: 72px 128px;
+		// 	padding-top: min(128px, max(10vh, 32px));
+		// }
 
 		&::before {
 			content: '';

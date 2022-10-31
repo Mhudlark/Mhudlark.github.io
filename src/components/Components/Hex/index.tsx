@@ -2,13 +2,13 @@ import React from 'react';
 import './styles.scss';
 
 interface Props {
-	additionalClasses?: string;
+	style?: React.CSSProperties;
 	children?: React.ReactNode;
 }
 
-const Hex = ({ additionalClasses, children }: Props) => {
+const Hex = ({ children, style }: Props) => {
 	return (
-		<div className={`hex-outer ${additionalClasses}`}>
+		<div className="hex-outer" style={style}>
 			<div className="hex-inner">{children}</div>
 		</div>
 	);
