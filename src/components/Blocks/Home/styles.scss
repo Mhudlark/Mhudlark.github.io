@@ -20,9 +20,13 @@
 			margin-right: 84px;
 		}
 
-		&.v-offset {
+		&:nth-child(2n) {
 			margin-top: 0px;
 			height: calc(104px - 48px);
+		}
+
+		&:last-child {
+			margin-bottom: 32px;
 		}
 	}
 }

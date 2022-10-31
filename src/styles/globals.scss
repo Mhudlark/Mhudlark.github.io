@@ -116,3 +116,39 @@ p {
 		margin: 8px 0;
 	}
 }
+
+// ======================================================================
+// BREAKPOINTS
+// ======================================================================
+
+.bp-s {
+	display: none !important;
+
+	@include bp($bp-s) {
+		display: flex !important;
+	}
+}
+
+.bp-m {
+	display: none !important;
+
+	@include bp($bp-m) {
+		display: flex !important;
+	}
+}
+
+.bp-l {
+	display: none !important;
+
+	@include bp($bp-l) {
+		display: flex !important;
+	}
+}
+
+.bp-xl {
+	display: none !important;
+
+	@include bp($bp-xl) {
+		display: flex !important;
+	}
+}
