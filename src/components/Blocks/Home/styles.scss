@@ -1,21 +1,28 @@
 @use 'sass:math';
 
-.logo-title-container {
+.home-content {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 32px;
 
 	.links-container {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		gap: 24px;
-		margin-top: 8px;
+		gap: 6px;
 
-		@include bp($bp-s) {
-			gap: 32px;
+		&.h-offset-right {
+			margin-left: 84px;
+		}
+
+		&.h-offset-left {
+			margin-right: 84px;
+		}
+
+		&.v-offset {
+			margin-top: 0px;
+			height: calc(104px - 48px);
 		}
 	}
 }
