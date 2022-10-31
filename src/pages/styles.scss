@@ -36,7 +36,7 @@
 		margin-top: $navbar-height;
 		background-color: $gray-800;
 		min-height: fit-content;
-		height: calc(100vh - $navbar-height);
+		height: max(calc(100vh - $navbar-height), 840px);
 		position: relative;
 		overflow-x: hidden;
 		overflow-y: hidden;
