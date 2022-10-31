@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ButtonType } from '../componentTypes';
+import { ButtonType } from '../../componentTypes';
 import './styles.scss';
 
 interface Props {
