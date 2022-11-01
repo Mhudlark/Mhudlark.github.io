@@ -20,7 +20,7 @@ const IndexPage = () => {
 	const aboutRef = useRef<null | HTMLElement>(null);
 
 	const scrollToHome = () => {
-		smoothScrollToTop();
+		smoothScrollToTop(window);
 	};
 
 	const scrollToAbout = () => {

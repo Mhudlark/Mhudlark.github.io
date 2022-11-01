@@ -2,7 +2,7 @@ import { scrollIntoView, polyfill } from 'seamless-scroll-polyfill';
 
 polyfill();
 
-export const smoothScrollToTop = () => {
+export const smoothScrollToTop = (window: Window) => {
 	window.scrollTo({
 		top: 0,
 		left: 0,
