@@ -9,15 +9,25 @@ const Home = () => {
 	return (
 		<div className="home-content">
 			<div className="links-container v-offset h-offset-left">
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
 				<Hex />
 				<Hex />
 				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
+				<Hex />
+				<Hex />
 				<Hex style={{ opacity: 0 }} />
 				<Hex style={{ opacity: 0 }} />
 				<Hex />
 				<Hex />
 			</div>
 			<div className="links-container ">
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
 				<Hex />
 				<Hex />
 				<Hex />
@@ -27,18 +37,32 @@ const Home = () => {
 				<Hex />
 				<Hex />
 				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
+				<Hex />
 			</div>
 			<div className="links-container v-offset ">
 				<Hex />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
 				<Hex />
 				<Hex />
 				<Hex />
 				<Hex />
 				<Hex />
 				<Hex />
+				<Hex />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
 				<Hex style={{ opacity: 0 }} />
 			</div>
 			<div className="links-container">
+				<Hex />
+				<Hex />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
 				<Hex style={{ opacity: 0 }} />
 				<Hex />
 				<Hex />
@@ -48,8 +72,16 @@ const Home = () => {
 				<Hex />
 				<Hex />
 				<Hex />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
 			</div>
 			<div className="links-container v-offset h-offset-right">
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
 				<Hex />
 				<Hex />
 				{mapEnum(IconLinkType, type => (
@@ -60,8 +92,16 @@ const Home = () => {
 				<Hex />
 				<Hex />
 				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
+				<Hex />
+				<Hex />
 			</div>
 			<div className="links-container">
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
 				<Hex />
 				<Hex />
 				<Hex />
@@ -70,6 +110,10 @@ const Home = () => {
 				<Hex />
 				<Hex />
 				<Hex />
+				<Hex />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
 				<Hex />
 			</div>
 			<div className="links-container v-offset">
@@ -85,15 +129,26 @@ const Home = () => {
 			<div className="links-container h-offset-right">
 				<Hex />
 				<Hex />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
+				<Hex />
+				<Hex />
 				<Hex />
 				<Hex />
 				<Hex style={{ opacity: 0 }} />
 				<Hex />
 				<Hex />
 				<Hex />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
 			</div>
 			<div className="links-container v-offset">
 				<Hex />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
+				<Hex />
 				<Hex />
 				<Hex style={{ opacity: 0 }} />
 				<Hex />
@@ -101,6 +156,9 @@ const Home = () => {
 				<Hex style={{ opacity: 0 }} />
 				<Hex />
 				<Hex />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
+				<Hex style={{ opacity: 0 }} />
 			</div>
 		</div>
 	);
