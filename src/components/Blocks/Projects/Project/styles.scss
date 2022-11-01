@@ -1,0 +1,24 @@
+.project {
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+
+	.info-container {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+
+		.name-container {
+			display: flex;
+			flex-direction: column;
+
+			h3 {
+				margin-bottom: 8px;
+			}
+
+			a {
+				color: $blue-500;
+			}
+		}
+	}
+}

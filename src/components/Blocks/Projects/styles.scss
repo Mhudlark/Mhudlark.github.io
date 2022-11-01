@@ -1,8 +1,8 @@
-.about-content {
+.projects-content {
 	display: flex;
 	flex-direction: column;
-	max-width: 100%;
 	width: 100%;
+	max-width: 100%;
 
 	@include bp($bp-m) {
 		gap: 16px;
@@ -28,5 +28,11 @@
 
 	h3 {
 		color: $yellow-600;
+	}
+
+	.projects-container {
+		display: flex;
+		flex-direction: column;
+		gap: 48px;
 	}
 }

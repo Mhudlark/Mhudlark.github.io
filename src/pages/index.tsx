@@ -5,6 +5,7 @@ import './styles.scss';
 import About from '../components/Blocks/About';
 import { smoothScrollTo, smoothScrollToTop } from '../util/ui';
 import Home from '../components/Blocks/Home';
+import Projects from '../components/Blocks/Projects';
 
 export const Head = () => {
 	return (
@@ -18,6 +19,7 @@ export const Head = () => {
 
 const IndexPage = () => {
 	const aboutRef = useRef<null | HTMLElement>(null);
+	const projectsRef = useRef<null | HTMLElement>(null);
 
 	const scrollToHome = () => {
 		smoothScrollToTop(window);
@@ -27,12 +29,16 @@ const IndexPage = () => {
 		if (aboutRef.current !== null) smoothScrollTo(aboutRef.current as Element);
 	};
 
+	const scrollToProjects = () => {
+		if (projectsRef.current !== null) smoothScrollTo(projectsRef.current as Element);
+	};
+
 	return (
 		<main className="main">
 			<Navbar
 				onHomeClick={scrollToHome}
 				onAboutClick={scrollToAbout}
-				onProjectsClick={() => console.log('Projects clicked')}
+				onProjectsClick={scrollToProjects}
 			/>
 			<div>
 				<section className="section home">
@@ -42,6 +48,9 @@ const IndexPage = () => {
 			</div>
 			<section className="section about" ref={aboutRef}>
 				<About />
+			</section>
+			<section className="section projects" ref={projectsRef}>
+				<Projects />
 			</section>
 		</main>
 	);

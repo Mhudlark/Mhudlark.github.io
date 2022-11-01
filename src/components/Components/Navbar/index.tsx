@@ -20,11 +20,7 @@ const Navbar = ({ onHomeClick, onAboutClick, onProjectsClick }: Props) => {
 					<NavbarItem title={textContent.pages.about} onClick={onAboutClick} />
 				</li>
 				<li>
-					<NavbarItem
-						title={textContent.pages.projects}
-						onClick={onProjectsClick}
-						disabled
-					/>
+					<NavbarItem title={textContent.pages.projects} onClick={onProjectsClick} />
 				</li>
 			</ul>
 		</nav>
