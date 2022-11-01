@@ -1,11 +1,15 @@
-.body {
-	background: linear-gradient($gray-800 0%, $gray-800 500px);
+body {
+	background-color: $gray-800;
 }
 
 .main {
 	width: 100%;
 	position: relative;
 	min-height: calc(100vh - $navbar-height);
+
+	* {
+		color: $gray-000;
+	}
 
 	@include bp($bp-s) {
 		min-height: calc(100vh - $navbar-s-height);
@@ -102,4 +106,35 @@
 			margin-top: 64px;
 		}
 	}
+}
+
+// ======================================================================
+// SCROLLBAR
+// ======================================================================
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: $gray-800;
+	// background: linear-gradient(
+	// 	$gray-800 0%,
+	// 	$gray-800 80px,
+	// 	$gray-000 80px,
+	// 	$gray-000 100%
+	// );
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: $yellow-500;
+	border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: $yellow-700;
 }
