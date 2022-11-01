@@ -3,32 +3,35 @@ import { TypographyVariants } from '../../../Components/componentTypes';
 import Typography from '../../../Components/Typography';
 import './styles.scss';
 
-interface Project {
+interface ProjectData {
 	subtitle: string;
 	url: string;
 	text: string[];
-	imageUrl: string;
+	image: {
+		url: string;
+		alt?: string;
+	};
 }
 
 interface Props {
-	project: Project;
+	project: ProjectData;
 }
 
-const IconLink = ({ project }: Props) => {
+const Project = ({ project }: Props) => {
 	return (
 		<div className="project">
-			<div className="info-container">
-				<div className="name-container">
-					<Typography variant={TypographyVariants.h3}>{project.subtitle}</Typography>
-					<a className="project-url" href={project.url} target="_blank" rel="noopener">
-						{project.url}
-					</a>
-				</div>
-				<Typography>{project.text}</Typography>
+			<div className="name-container">
+				<Typography variant={TypographyVariants.h3}>{project.subtitle}</Typography>
+				<a className="project-url" href={project.url} target="_blank" rel="noopener">
+					{project.url}
+				</a>
 			</div>
-			<img src={project.imageUrl} alt="project" />
+			<div className="project-content-container">
+				<Typography>{project.text}</Typography>
+				<img src={project.image.url} alt={project.image?.alt ?? 'project-image'} />
+			</div>
 		</div>
 	);
 };
 
-export default IconLink;
+export default Project;
