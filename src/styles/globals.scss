@@ -82,6 +82,27 @@ p {
 	}
 }
 
+.h-300 {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 32px;
+	margin: 16px 0;
+
+	@include bp($bp-s) {
+		margin: 20px 0;
+	}
+
+	@include bp($bp-s, $bp-m) {
+		font-size: 34px;
+		line-height: 40px;
+	}
+
+	@include bp($bp-m) {
+		font-size: 42px;
+		line-height: 48px;
+	}
+}
+
 .h-400 {
 	font-weight: 700;
 	font-size: 24px;

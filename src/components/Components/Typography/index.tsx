@@ -14,9 +14,15 @@ interface Props {
 	variant?: TypographyVariants;
 	children?: String | String[];
 	component?: TypographyComponents;
+	style?: React.CSSProperties;
 }
 
-const Typography = ({ variant = TypographyVariants.p, children, component }: Props) => {
+const Typography = ({
+	variant = TypographyVariants.p,
+	children,
+	component,
+	style,
+}: Props) => {
 	const isArray = children !== undefined && Array.isArray(children);
 	const Component = component || variant;
 
@@ -35,7 +41,7 @@ const Typography = ({ variant = TypographyVariants.p, children, component }: Pro
 					})}
 				</div>
 			) : (
-				<Component className={`typography ${typographyClasses[variant]}`}>
+				<Component className={`typography ${typographyClasses[variant]}`} style={style}>
 					{children}
 				</Component>
 			)}

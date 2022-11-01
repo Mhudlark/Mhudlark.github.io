@@ -89,20 +89,6 @@ const aboutContent = {
 			},
 		],
 	},
-	education: {
-		subtitle: 'Education and Training',
-		experiences: [
-			{
-				dates: '2018 - Present',
-				title:
-					'Studying a Bachelor of Software Engineering (Honours) and Bachelor of Commerce (majoring in Business Analytics) at Monash University',
-			},
-			{
-				dates: '2012 - 2017',
-				title: 'Student at McKinnon Secondary College (Completed)',
-			},
-		],
-	},
 };
 
 export default aboutContent;

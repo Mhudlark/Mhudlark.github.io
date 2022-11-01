@@ -1,18 +1,14 @@
-.about-container {
+.about-content {
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+
+	@include bp($bp-m) {
+		gap: 16px;
+	}
+
 	@include bp($bp-l) {
 		max-width: 1048px;
-	}
-
-	.title {
-		margin: 20px 0;
-	}
-
-	.subtitle {
-		margin: 64px 0 24px;
-
-		@include bp($bp-s) {
-			margin: 64px 0 32px;
-		}
 	}
 
 	.horizontal-line-break {
@@ -22,10 +18,10 @@
 		border-radius: 2px;
 		background-color: $gray-300;
 		opacity: 0.4;
-		margin: 72px 0;
+		margin: 48px 0;
 
-		@include bp($bp-s, $bp-l) {
-			margin: 96px 0;
+		@include bp($bp-s) {
+			margin: 72px 0;
 		}
 	}
 
