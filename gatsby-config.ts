@@ -55,6 +55,9 @@ const config: GatsbyConfig = {
 				icon: 'src/assets/images/favicon.png',
 			},
 		},
+		`gatsby-plugin-image`,
+		`gatsby-plugin-sharp`,
+		`gatsby-transformer-sharp`,
 	],
 };
 
