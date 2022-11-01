@@ -25,10 +25,10 @@ const Home = () => {
 				<Hex />
 				<Hex style={{ opacity: 0 }} />
 				<Hex />
+				<Hex />
+				<Hex />
+				<Hex />
 				<Hex style={{ opacity: 0 }} />
-				<Hex />
-				<Hex />
-				<Hex />
 			</div>
 			<div className="links-container v-offset ">
 				<Hex />
@@ -37,6 +37,8 @@ const Home = () => {
 				<Hex />
 				<Hex />
 				<Hex />
+				<Hex />
+				<Hex style={{ opacity: 0 }} />
 			</div>
 			<div className="links-container">
 				<Hex style={{ opacity: 0 }} />
@@ -48,8 +50,6 @@ const Home = () => {
 				<Hex />
 				<Hex />
 				<Hex />
-				<Hex />
-				<Hex style={{ opacity: 0 }} />
 			</div>
 			<div className="links-container v-offset h-offset-right">
 				<Hex />
@@ -61,7 +61,7 @@ const Home = () => {
 				))}
 				<Hex />
 				<Hex />
-				<Hex />
+				<Hex style={{ opacity: 0 }} />
 			</div>
 			<div className="links-container">
 				<Hex />
@@ -71,8 +71,11 @@ const Home = () => {
 				<Hex />
 				<Hex />
 				<Hex />
+				<Hex />
+				<Hex />
 			</div>
-			<div className="links-container v-offset h-offset-left">
+			<div className="links-container v-offset">
+				<Hex />
 				<Hex />
 				<Hex />
 				<Hex />
