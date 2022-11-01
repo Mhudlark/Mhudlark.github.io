@@ -3,7 +3,7 @@ import { useRef } from 'react';
 import Navbar from '../components/Components/Navbar';
 import './styles.scss';
 import About from '../components/Blocks/About';
-import { smoothScrollTo } from '../util/ui';
+import { smoothScrollTo, smoothScrollToTop } from '../util/ui';
 import Home from '../components/Blocks/Home';
 
 export const Head = () => {
@@ -17,11 +17,10 @@ export const Head = () => {
 };
 
 const IndexPage = () => {
-	const homeRef = useRef<null | HTMLElement>(null);
 	const aboutRef = useRef<null | HTMLElement>(null);
 
 	const scrollToHome = () => {
-		if (homeRef.current !== null) smoothScrollTo(homeRef.current as Element);
+		smoothScrollToTop();
 	};
 
 	const scrollToAbout = () => {
@@ -35,9 +34,12 @@ const IndexPage = () => {
 				onAboutClick={scrollToAbout}
 				onProjectsClick={() => console.log('Projects clicked')}
 			/>
-			<section className="section home" ref={homeRef}>
-				<Home />
-			</section>
+			<div>
+				<section className="section home">
+					<Home />
+				</section>
+				<div className="br triangle" />
+			</div>
 			<section className="section about" ref={aboutRef}>
 				<About />
 			</section>
