@@ -130,11 +130,12 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: $yellow-500;
+	background: $yellow-600;
 	border-radius: 4px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: $yellow-700;
+	background: $yellow-800;
+	transition: all 0.2s ease-in-out;
 }
