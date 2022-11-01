@@ -12,3 +12,19 @@ export enum ButtonType {
 	danger = 'danger',
 	info = 'info',
 }
+
+export enum TypographyVariants {
+	h1 = 'h1',
+	h2 = 'h2',
+	h3 = 'h3',
+	h4 = 'h4',
+	p = 'p',
+}
+
+export enum TypographyComponents {
+	h1 = 'h1',
+	h2 = 'h2',
+	h3 = 'h3',
+	h4 = 'h4',
+	p = 'p',
+}

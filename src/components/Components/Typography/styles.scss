@@ -1,0 +1,11 @@
+.typography {
+	&.array {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+
+		@include bp($bp-s) {
+			gap: 12px;
+		}
+	}
+}

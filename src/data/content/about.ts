@@ -1,7 +1,17 @@
 const aboutContent = {
-	aboutMe: {
-		subtitle: 'About Me',
-		text: 'I am currently undertaking a Bachelor’s degree in Software Engineering (Honours) and a Bachelor’s degree in Commerce (majoring in Business Analytics) at Monash University. I enjoy physical activities such as walking my dogs, sports, yoga and bouldering. I spend a lot of time on personal projects including building mobile games, and developing web applications, with the occasional backend application to support them.',
+	title: 'About Me',
+	about: {
+		subtitle: 'Developer. Dog lover. Tracksuit wearer.',
+		text: [
+			`The title says it all. I'm a developer, I love dogs, and I wear tracksuits.`,
+			`As a developer I've worked with a variety of languages and frameworks, but 
+			I'm most experienced in web development, particularly with React and Node. 
+			My love of organisation extends into my work as I'm a big fan of clean and
+			well structured code.`,
+			`When I need a break I love to go outside for walks and to play sport. I'm 
+			always keen for a kick of the footy, a hit of squash or a quick bouldering
+			session.`,
+		],
 	},
 	previousExperience: {
 		subtitle: 'Previous Working Experience',
@@ -10,8 +20,7 @@ const aboutContent = {
 				roles: [
 					{
 						dates: 'Feb 2022 - Present',
-						organisationAndRole:
-							'Melbourne eResearch Group – Casual Research Assistant',
+						organisationAndRole: 'Melbourne eResearch Group – Casual Research Assistant',
 						dotPoints: [],
 					},
 					{
@@ -85,7 +94,8 @@ const aboutContent = {
 		experiences: [
 			{
 				dates: '2018 - Present',
-				title: 'Studying a Bachelor of Software Engineering (Honours) and Bachelor of Commerce (majoring in Business Analytics) at Monash University',
+				title:
+					'Studying a Bachelor of Software Engineering (Honours) and Bachelor of Commerce (majoring in Business Analytics) at Monash University',
 			},
 			{
 				dates: '2012 - 2017',
