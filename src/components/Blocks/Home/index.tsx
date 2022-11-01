@@ -9,7 +9,6 @@ const Home = () => {
 	return (
 		<div className="home-content">
 			<div className="links-container v-offset h-offset-left">
-				<Hex style={{ opacity: 0 }} />
 				<Hex />
 				<Hex />
 				<Hex style={{ opacity: 0 }} />
@@ -17,7 +16,6 @@ const Home = () => {
 				<Hex style={{ opacity: 0 }} />
 				<Hex />
 				<Hex />
-				<Hex style={{ opacity: 0 }} />
 			</div>
 			<div className="links-container ">
 				<Hex />
