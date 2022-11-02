@@ -104,23 +104,23 @@ p {
 }
 
 .h-400 {
-	font-weight: 700;
-	font-size: 24px;
+	font-weight: 600;
+	font-size: 22px;
 	line-height: 30px;
-	margin: 16px 0;
+	margin: 12px 0;
 
 	@include bp($bp-s) {
-		margin: 20px 0;
+		margin: 16px 0;
 	}
 
 	@include bp($bp-s, $bp-m) {
-		font-size: 32px;
-		line-height: 38px;
+		font-size: 24px;
+		line-height: 32px;
 	}
 
 	@include bp($bp-m) {
-		font-size: 40px;
-		line-height: 46px;
+		font-size: 28px;
+		line-height: 36px;
 	}
 }
 
