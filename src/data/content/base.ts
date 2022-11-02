@@ -1,4 +1,4 @@
-const textContent = {
+const baseContent = {
 	pages: {
 		home: 'Home',
 		about: 'About Me',
@@ -6,4 +6,4 @@ const textContent = {
 	},
 };
 
-export default textContent;
+export default baseContent;

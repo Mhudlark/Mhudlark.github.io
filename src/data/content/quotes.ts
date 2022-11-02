@@ -17,10 +17,6 @@ const quotesContent = {
 			text: 'Frustration is being notified you have an error in line 548 in a 70 line file.',
 			author: 'Anonymous',
 		},
-		// {
-		// 	text: '',
-		// 	author: '',
-		// },
 	],
 };
 
