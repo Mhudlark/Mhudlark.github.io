@@ -1,4 +1,5 @@
 import React from 'react';
+import BulletList from '../../../Components/BulletList';
 import { TypographyVariants } from '../../../Components/componentTypes';
 import Typography from '../../../Components/Typography';
 import './styles.scss';
@@ -6,7 +7,10 @@ import './styles.scss';
 interface ProjectData {
 	subtitle: string;
 	url: string;
-	text: string[];
+	subsections: {
+		title: string;
+		text: string[];
+	}[];
 	image: {
 		url: string;
 		alt?: string;
@@ -30,9 +34,15 @@ const Project = ({ project }: Props) => {
 					rel="noopener"
 				/>
 			</div>
-			<div className="project-content-container">
-				<Typography>{project.text}</Typography>
-				<img src={project.image.url} alt={project.image?.alt ?? 'project-image'} />
+			<img src={project.image.url} alt={project.image?.alt ?? 'project-image'} />
+			<div className="subsections-container">
+				{Array.isArray(project?.subsections) &&
+					project.subsections.map(subsection => (
+						<div key={subsection.title} className="subsection">
+							<Typography variant={TypographyVariants.h4}>{subsection.title}</Typography>
+							<BulletList>{subsection.text}</BulletList>
+						</div>
+					))}
 			</div>
 		</div>
 	);

@@ -7,12 +7,27 @@ const projectsContent = {
 			image: {
 				url: './assets/images/projects/mlvet/MLVET.png',
 			},
-			text: [
-				`- Desktop video editing program`,
-				`- ML cloud and local transcription of video content`,
-				`- Edit the transcription to edit the output video`,
-				`- Live preview of output video`,
-				`- Export tp MP4 and EDL file formats`,
+			subsections: [
+				{
+					title: 'Features',
+					text: [
+						`Desktop video editing program`,
+						`ML cloud and local transcription of video content`,
+						`Edit the transcription to edit the output video`,
+						`Live preview of output video`,
+						`Export tp MP4 and EDL file formats`,
+					],
+				},
+				{
+					title: 'My contributions',
+					text: [
+						`Desktop video editing program`,
+						`ML cloud and local transcription of video content`,
+						`Edit the transcription to edit the output video`,
+						`Live preview of output video`,
+						`Export tp MP4 and EDL file formats`,
+					],
+				},
 			],
 		},
 	],

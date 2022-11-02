@@ -3,10 +3,10 @@
 	flex-direction: column;
 	width: 100%;
 	max-width: 100%;
-	gap: 16px;
+	gap: 32px;
 
 	@include bp($bp-m) {
-		gap: 16px;
+		gap: 48px;
 	}
 
 	@include bp($bp-l) {
