@@ -35,7 +35,7 @@ const Project = ({ project }: Props) => {
 				/>
 			</div>
 			{Array.isArray(project?.primaryImages) && project.primaryImages.length > 0 && (
-				<div className={`primary-images-container l${project.primaryImages.length}`}>
+				<div className="primary-images-container">
 					{project.primaryImages.map((image, index) => (
 						<img
 							key={index}
