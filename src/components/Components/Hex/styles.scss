@@ -86,16 +86,4 @@
 		transform-origin: bottom left;
 		transform: rotate(60deg);
 	}
-
-	.shadow-right-3 {
-		z-index: 2;
-		position: absolute;
-		width: $width;
-		height: 1px;
-		left: 50%;
-		top: calc(-50% - 1px);
-		background-color: $shadow-right-color;
-		transform-origin: top left;
-		transform: rotate(60deg);
-	}
 }

@@ -13,7 +13,6 @@ const Hex = ({ children, style }: Props) => {
 			<div className="shadow-bottom-2" />
 			<div className="shadow-right-1" />
 			<div className="shadow-right-2" />
-			<div className="shadow-right-3" />
 			<div className="hex-inner">{children}</div>
 		</div>
 	);
