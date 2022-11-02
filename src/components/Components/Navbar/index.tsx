@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './styles.scss';
-import textContent from '../../../data/content/text';
+import baseContent from '../../../data/content/base';
 import NavbarItem from '../NavbarItem';
 
 interface Props {
@@ -14,13 +14,13 @@ const Navbar = ({ onHomeClick, onAboutClick, onProjectsClick }: Props) => {
 		<nav className="navbar">
 			<ul>
 				<li>
-					<NavbarItem title={textContent.pages.home} onClick={onHomeClick} />
+					<NavbarItem title={baseContent.pages.home} onClick={onHomeClick} />
 				</li>
 				<li>
-					<NavbarItem title={textContent.pages.about} onClick={onAboutClick} />
+					<NavbarItem title={baseContent.pages.about} onClick={onAboutClick} />
 				</li>
 				<li>
-					<NavbarItem title={textContent.pages.projects} onClick={onProjectsClick} />
+					<NavbarItem title={baseContent.pages.projects} onClick={onProjectsClick} />
 				</li>
 			</ul>
 		</nav>
