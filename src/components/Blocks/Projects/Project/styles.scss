@@ -10,7 +10,7 @@
 	.name-container {
 		display: flex;
 		flex-direction: row;
-		gap: 12px;
+		gap: 16px;
 		align-items: center;
 
 		a {
@@ -47,23 +47,46 @@
 		}
 	}
 
-	img {
-		width: 100%;
-		height: auto;
-		object-fit: contain;
-		border-radius: 4px;
-		box-shadow: rgba($gray-500, 0.12) 0px 2px 8px 0px;
+	.primary-images-container {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		align-items: center;
+
+		img {
+			width: 100%;
+			height: auto;
+			object-fit: contain;
+			border-radius: 1%;
+			box-shadow: rgba($gray-500, 0.14) 0px 2px 8px 0px;
+		}
+
+		@include bp(800) {
+			display: flex;
+			flex-direction: row;
+			gap: 32px;
+			justify-content: center;
+			flex-wrap: wrap;
+
+			img {
+				max-height: 500px;
+				width: fit-content;
+			}
+		}
 	}
 
 	.subsections-container {
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
 		gap: 12px;
 
 		@include bp($bp-s) {
 			flex-direction: row;
-			gap: 32px;
+			gap: max(min(5.5vw, 48px), 32px);
+		}
+
+		@include bp($bp-m) {
+			gap: 64px;
 		}
 
 		p {

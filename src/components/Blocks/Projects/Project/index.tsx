@@ -11,10 +11,10 @@ interface ProjectData {
 		title: string;
 		text: string[];
 	}[];
-	image: {
+	primaryImages: {
 		url: string;
 		alt?: string;
-	};
+	}[];
 }
 
 interface Props {
@@ -34,13 +34,27 @@ const Project = ({ project }: Props) => {
 					rel="noopener"
 				/>
 			</div>
-			<img src={project.image.url} alt={project.image?.alt ?? 'project-image'} />
+			{Array.isArray(project?.primaryImages) && project.primaryImages.length > 0 && (
+				<div className={`primary-images-container l${project.primaryImages.length}`}>
+					{project.primaryImages.map((image, index) => (
+						<img
+							key={index}
+							src={image.url}
+							alt={image?.alt ?? `primary-image-${index}`}
+						/>
+					))}
+				</div>
+			)}
 			<div className="subsections-container">
 				{Array.isArray(project?.subsections) &&
 					project.subsections.map(subsection => (
 						<div key={subsection.title} className="subsection">
 							<Typography variant={TypographyVariants.h4}>{subsection.title}</Typography>
-							<BulletList>{subsection.text}</BulletList>
+							{Array.isArray(subsection.text) ? (
+								<BulletList>{subsection.text}</BulletList>
+							) : (
+								<Typography>{subsection.text}</Typography>
+							)}
 						</div>
 					))}
 			</div>
