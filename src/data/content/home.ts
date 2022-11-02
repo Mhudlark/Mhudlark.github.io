@@ -22,7 +22,7 @@ const homeContent = {
 		[IconLinkType.resume]: {
 			name: 'Download CV',
 			className: 'resume',
-			url: '../data/about_files/Resume - Hugh Henry.pdf',
+			url: './assets/documents/Resume - Hugh Henry.pdf',
 		},
 	},
 };
