@@ -12,6 +12,7 @@
 
 	.hex-inner {
 		height: calc(0.5 * $height);
+		margin: calc(0.25 * $height) 0;
 		width: 100%;
 	}
 }
