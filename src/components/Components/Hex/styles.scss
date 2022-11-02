@@ -1,5 +1,5 @@
 .hex-outer {
-	$background-color: $gray-000;
+	$background-color: $gray-100;
 	$height: 90px;
 	$width: calc(0.865 * $height);
 
@@ -36,54 +36,5 @@
 		border-top: $point-height solid $background-color;
 		border-left: calc(0.5 * $width) solid transparent;
 		border-right: calc(0.5 * $width) solid transparent;
-	}
-
-	$shadow-bottom-color: $gray-300;
-	$shadow-right-color: $gray-200;
-
-	.shadow-bottom-1 {
-		z-index: 2;
-		position: absolute;
-		width: 0;
-		bottom: 0;
-		border-bottom: $point-height solid $shadow-bottom-color;
-		border-left: calc(0.5 * $width) solid transparent;
-		border-right: calc(0.5 * $width) solid transparent;
-	}
-
-	.shadow-bottom-2 {
-		z-index: 2;
-		position: absolute;
-		width: 0;
-		bottom: -50%;
-		border-top: $point-height solid $shadow-bottom-color;
-		border-left: calc(0.5 * $width) solid transparent;
-		border-right: calc(0.5 * $width) solid transparent;
-	}
-
-	.shadow-right-1 {
-		z-index: 2;
-		position: absolute;
-		width: 0;
-		left: 50%;
-		top: -50%;
-		border-top: $point-height solid $shadow-right-color;
-		border-left: calc(0.5 * $width) solid transparent;
-		border-right: calc(0.5 * $width) solid transparent;
-		transform-origin: top left;
-		transform: rotate(60deg);
-	}
-
-	.shadow-right-2 {
-		z-index: 2;
-		position: absolute;
-		width: 0;
-		left: 50%;
-		top: -100%;
-		border-bottom: $point-height solid $shadow-right-color;
-		border-left: calc(0.5 * $width) solid transparent;
-		border-right: calc(0.5 * $width) solid transparent;
-		transform-origin: bottom left;
-		transform: rotate(60deg);
 	}
 }

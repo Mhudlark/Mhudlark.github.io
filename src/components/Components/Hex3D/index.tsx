@@ -6,7 +6,7 @@ interface Props {
 	children?: React.ReactNode;
 }
 
-const Hex = ({ children, style }: Props) => {
+const Hex3D = ({ children, style }: Props) => {
 	return (
 		<div className="hex-outer" style={style}>
 			<div className="hex-inner">{children}</div>
@@ -14,4 +14,4 @@ const Hex = ({ children, style }: Props) => {
 	);
 };
 
-export default Hex;
+export default Hex3D;
