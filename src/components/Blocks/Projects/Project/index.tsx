@@ -9,7 +9,7 @@ interface ProjectData {
 	url: string;
 	subsections: {
 		title: string;
-		text: string[];
+		text: string | string[];
 	}[];
 	primaryImages: {
 		url: string;
