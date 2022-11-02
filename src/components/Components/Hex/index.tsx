@@ -8,7 +8,7 @@ interface Props {
 
 const Hex = ({ children, style }: Props) => {
 	return (
-		<div className="hex-outer" style={style}>
+		<div className="hex hex-outer" style={style}>
 			<div className="hex-inner">{children}</div>
 		</div>
 	);
