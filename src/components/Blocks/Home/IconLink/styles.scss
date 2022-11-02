@@ -105,7 +105,7 @@
 		}
 
 		&.resume {
-			@include mask-icon($pdf-icon) {
+			@include mask-icon($cv-icon) {
 				mask-position: 60% 50%;
 			}
 		}

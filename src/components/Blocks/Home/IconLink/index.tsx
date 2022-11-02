@@ -26,6 +26,7 @@ const IconLink = ({ type }: Props) => {
 				<a
 					className={`icon-link-base ${typeClassName}`}
 					href={homeContent.links[type].url}
+					title={`${type[0].toUpperCase()}${type.slice(1)}`}
 					{...options}
 				/>
 			</div>
