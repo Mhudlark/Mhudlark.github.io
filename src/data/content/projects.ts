@@ -11,7 +11,7 @@ const projectsContent = {
 				{
 					title: 'Features',
 					text: [
-						`Desktop video editing program`,
+						`Desktop video editing tool`,
 						`ML cloud and local transcription of video content`,
 						`Edit the transcription to edit the output video`,
 						`Live preview of output video`,
@@ -19,14 +19,8 @@ const projectsContent = {
 					],
 				},
 				{
-					title: 'My contributions',
-					text: [
-						`Desktop video editing program`,
-						`ML cloud and local transcription of video content`,
-						`Edit the transcription to edit the output video`,
-						`Live preview of output video`,
-						`Export tp MP4 and EDL file formats`,
-					],
+					title: 'Challenges I faced',
+					text: [`Live video preview`, `CI/CD packaging pipeline`, `Local transcription`],
 				},
 			],
 		},

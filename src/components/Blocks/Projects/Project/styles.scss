@@ -61,7 +61,7 @@
 		align-items: flex-start;
 		gap: 12px;
 
-		@include bp($bp-m) {
+		@include bp($bp-s) {
 			flex-direction: row;
 			gap: 32px;
 		}
@@ -73,6 +73,8 @@
 		.subsection {
 			display: flex;
 			flex-direction: column;
+			flex-basis: 0;
+			flex-grow: 1;
 
 			p {
 				margin: 0;
