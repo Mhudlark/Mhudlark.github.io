@@ -14,7 +14,9 @@ const About = () => {
 					projectsContent.projects.map((project, index) => (
 						<Fragment key={index}>
 							<Project project={project} />
-							<span className="horizontal-line-break" />
+							{index !== projectsContent.projects.length - 1 && (
+								<span className="horizontal-line-break" />
+							)}
 						</Fragment>
 					))}
 			</div>
