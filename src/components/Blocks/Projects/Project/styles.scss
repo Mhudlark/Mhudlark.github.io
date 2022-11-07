@@ -62,7 +62,6 @@
 		}
 
 		@include bp(800) {
-			display: flex;
 			flex-direction: row;
 			gap: 32px;
 			justify-content: center;
@@ -70,7 +69,7 @@
 
 			img {
 				max-height: 500px;
-				width: fit-content;
+				width: auto;
 			}
 		}
 	}
