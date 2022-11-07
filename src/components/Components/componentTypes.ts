@@ -18,6 +18,7 @@ export enum TypographyVariants {
 	h2 = 'h2',
 	h3 = 'h3',
 	h4 = 'h4',
+	h5 = 'h5',
 	p = 'p',
 }
 
@@ -26,5 +27,6 @@ export enum TypographyComponents {
 	h2 = 'h2',
 	h3 = 'h3',
 	h4 = 'h4',
+	h5 = 'h5',
 	p = 'p',
 }

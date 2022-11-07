@@ -25,7 +25,9 @@ const Project = ({ project }: Props) => {
 	return (
 		<div className="project">
 			<div className="name-container">
-				<Typography variant={TypographyVariants.h3}>{project.subtitle}</Typography>
+				<Typography variant={TypographyVariants.h4} className="project-title">
+					{project.subtitle}
+				</Typography>
 				<a
 					className="project-url"
 					href={project.url}
@@ -49,7 +51,7 @@ const Project = ({ project }: Props) => {
 				{Array.isArray(project?.subsections) &&
 					project.subsections.map(subsection => (
 						<div key={subsection.title} className="subsection">
-							<Typography variant={TypographyVariants.h4}>{subsection.title}</Typography>
+							<Typography variant={TypographyVariants.h5}>{subsection.title}</Typography>
 							{Array.isArray(subsection.text) ? (
 								<BulletList>{subsection.text}</BulletList>
 							) : (

@@ -8,7 +8,9 @@ import Project from './Project';
 const About = () => {
 	return (
 		<div className="projects-content">
-			<Typography variant={TypographyVariants.h1}>{projectsContent.title}</Typography>
+			<Typography variant={TypographyVariants.h2} className="projects-title">
+				{projectsContent.title}
+			</Typography>
 			<div className="projects-container">
 				{Array.isArray(projectsContent.projects) &&
 					projectsContent.projects.map((project, index) => (

@@ -7,6 +7,7 @@ const typographyClasses = {
 	[TypographyVariants.h2]: 'h-200',
 	[TypographyVariants.h3]: 'h-300',
 	[TypographyVariants.h4]: 'h-400',
+	[TypographyVariants.h5]: 'h-500',
 	[TypographyVariants.p]: 'p',
 };
 
@@ -15,6 +16,7 @@ interface Props {
 	children?: String | String[];
 	component?: TypographyComponents;
 	style?: React.CSSProperties;
+	className?: string;
 }
 
 const Typography = ({
@@ -22,6 +24,7 @@ const Typography = ({
 	children,
 	component,
 	style,
+	className,
 }: Props) => {
 	const isArray = children !== undefined && Array.isArray(children);
 	const Component = component || variant;
@@ -33,7 +36,7 @@ const Typography = ({
 					{children.map((t, index) => {
 						return (
 							<Fragment key={index}>
-								<Typography variant={variant} component={component}>
+								<Typography variant={variant} component={component} className={className}>
 									{t}
 								</Typography>
 							</Fragment>
@@ -41,7 +44,10 @@ const Typography = ({
 					})}
 				</div>
 			) : (
-				<Component className={`typography ${typographyClasses[variant]}`} style={style}>
+				<Component
+					className={`typography ${typographyClasses[variant]} ${className ?? ''}`}
+					style={style}
+				>
 					{children}
 				</Component>
 			)}
