@@ -70,5 +70,10 @@
 			height: $size;
 			mask-size: calc($size * 0.8);
 		}
+
+		&:hover {
+			background-color: $yellow-400;
+			transition: all 0.3s ease-in-out;
+		}
 	}
 }
