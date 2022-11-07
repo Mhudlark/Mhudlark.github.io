@@ -15,6 +15,7 @@ const NavbarItem = ({ title, onClick, disabled = false }: Props) => {
 			onClick={onClick}
 			aria-label={title}
 			disabled={disabled}
+			title={title}
 		>
 			{title}
 		</button>
