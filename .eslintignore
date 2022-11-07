@@ -4,6 +4,7 @@ node_modules
 .eslintrc.js
 
 gatsby-browser.tsx
+gatsby-ssr.tsx
 
 public
 
