@@ -12,7 +12,7 @@ interface Props {
 const Navbar = ({ onHomeClick, onAboutClick, onProjectsClick }: Props) => {
 	return (
 		<nav className="navbar">
-			<ul>
+			<ul className="navbar-items-container">
 				<li>
 					<NavbarItem title={baseContent.pages.home} onClick={onHomeClick} />
 				</li>
@@ -23,6 +23,7 @@ const Navbar = ({ onHomeClick, onAboutClick, onProjectsClick }: Props) => {
 					<NavbarItem title={baseContent.pages.projects} onClick={onProjectsClick} />
 				</li>
 			</ul>
+			<button className="mobile-menu-button" onClick={() => console.log('menu')}></button>
 		</nav>
 	);
 };

@@ -3,16 +3,22 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	height: $navbar-height;
-	background-color: $gray-800;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
 	z-index: $z-root-navbar;
-	padding: 0 6px;
+	background-color: $gray-800;
+
+	padding: 0 12px 0 6px;
+	height: $navbar-height;
 
 	@include bp($bp-s) {
 		height: $navbar-s-height;
 	}
 
-	ul {
+	ul.navbar-items-container {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -27,6 +33,42 @@
 
 		li {
 			height: 100%;
+		}
+	}
+
+	.mobile-menu-button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		position: relative;
+		$size: 24px;
+		width: $size;
+		height: $size;
+
+		cursor: pointer;
+		background-color: $yellow-600;
+		box-shadow: none;
+		border: none;
+
+		mask: $menu-icon;
+		mask-repeat: no-repeat;
+		mask-size: calc($size * 0.8);
+		mask-position: center;
+
+		@include bp(440) {
+			position: absolute;
+			margin: auto 0;
+			right: min(max(6px, 2.2vw), 26px);
+			top: 0;
+			bottom: 0;
+		}
+
+		@include bp($bp-s) {
+			$size: 36px;
+			width: $size;
+			height: $size;
+			mask-size: calc($size * 0.8);
 		}
 	}
 }
