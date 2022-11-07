@@ -36,25 +36,36 @@
 		}
 	}
 
-	.mobile-menu-button {
+	.mobile-contact-button {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 
 		position: relative;
-		$size: 24px;
+		$size: 36px;
 		width: $size;
 		height: $size;
 
 		cursor: pointer;
-		background-color: $yellow-600;
+		background-color: $yellow-500;
 		box-shadow: none;
 		border: none;
+		text-decoration: none;
 
-		mask: $menu-icon;
+		mask: $email-icon;
 		mask-repeat: no-repeat;
 		mask-size: calc($size * 0.8);
 		mask-position: center;
+
+		&:hover {
+			background-color: $yellow-800;
+			transition: all 0.3s ease-in-out;
+		}
+
+		p {
+			display: none;
+			color: $gray-800;
+		}
 
 		@include bp(440) {
 			position: absolute;
@@ -62,18 +73,33 @@
 			right: min(max(6px, 2.2vw), 26px);
 			top: 0;
 			bottom: 0;
+			mask-size: $size;
 		}
 
-		@include bp($bp-s) {
-			$size: 36px;
-			width: $size;
-			height: $size;
-			mask-size: calc($size * 0.8);
-		}
+		@include bp(800) {
+			padding: 10px 16px;
+			height: fit-content;
+			width: fit-content;
 
-		&:hover {
-			background-color: $yellow-400;
-			transition: all 0.3s ease-in-out;
+			mask: none;
+			border-radius: 8px;
+			border: 1px solid $yellow-500;
+
+			p {
+				display: block;
+				font-family: 'Poppins';
+				font-weight: 600;
+			}
+
+			&:hover {
+				background-color: transparent;
+				transition: all 0.3s ease-in-out;
+
+				p {
+					display: block;
+					color: $yellow-500;
+				}
+			}
 		}
 	}
 }

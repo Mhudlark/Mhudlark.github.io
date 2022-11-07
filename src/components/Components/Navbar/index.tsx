@@ -23,7 +23,13 @@ const Navbar = ({ onHomeClick, onAboutClick, onProjectsClick }: Props) => {
 					<NavbarItem title={baseContent.pages.projects} onClick={onProjectsClick} />
 				</li>
 			</ul>
-			<button className="mobile-menu-button" onClick={() => console.log('menu')}></button>
+			<a
+				className="mobile-contact-button"
+				href="mailto:hughcthenry@gmail.com"
+				title="Contact me"
+			>
+				<p>Contact me</p>
+			</a>
 		</nav>
 	);
 };
