@@ -20,10 +20,9 @@
 		"lint": "eslint . --ext .js,.jsx,.ts,.tsx"
 	},
 	"dependencies": {
-		"@fontsource/baloo-2": "^4.5.4",
-		"@fontsource/comfortaa": "^4.5.4",
 		"@fontsource/poppins": "^4.5.10",
 		"@fontsource/roboto": "^4.5.3",
+		"@fontsource/rubik-maze": "^4.5.0",
 		"gatsby": "^4.24.5",
 		"gatsby-plugin-image": "^2.24.0",
 		"gatsby-plugin-manifest": "^4.24.0",

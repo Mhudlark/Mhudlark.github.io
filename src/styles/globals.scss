@@ -41,23 +41,30 @@ p {
 }
 
 .h-100 {
-	font-weight: 900;
-	font-size: 48px;
-	line-height: 54px;
+	font-weight: normal;
+	font-family: 'Rubik Maze', cursive;
+	font-size: 16.9vw;
+	line-height: 1.1;
 	margin: 24px 0;
 
 	@include bp($bp-s) {
-		margin: 28px 0;
+		font-size: 16.8vw;
 	}
 
 	@include bp($bp-s, $bp-m) {
-		font-size: 64px;
-		line-height: 70px;
+		font-size: 16.7vw;
 	}
 
-	@include bp($bp-m) {
-		font-size: 72px;
-		line-height: 80px;
+	@include bp($bp-m, $bp-l) {
+		font-size: 16.5vw;
+	}
+
+	@include bp($bp-l, $bp-xl) {
+		font-size: 16.3vw;
+	}
+
+	@include bp($bp-xl) {
+		font-size: 16.2vw;
 	}
 }
 

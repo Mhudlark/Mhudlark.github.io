@@ -6,6 +6,9 @@ import About from '../components/Blocks/About';
 import { smoothScrollTo, smoothScrollToTop } from '../util/ui';
 import Home from '../components/Blocks/Home';
 import Projects from '../components/Blocks/Projects';
+import Typography from '../components/Components/Typography';
+import { TypographyVariants } from '../components/Components/componentTypes';
+import homeContent from '../data/content/home';
 
 export const Head = () => {
 	return (
@@ -45,6 +48,11 @@ const IndexPage = () => {
 					<Home />
 				</section>
 				<div className="br triangle" />
+			</div>
+			<div className="name-title-container">
+				<Typography variant={TypographyVariants.h1} className="name-title">
+					{homeContent.title}
+				</Typography>
 			</div>
 			<section className="section about" ref={aboutRef}>
 				<About />

@@ -1086,16 +1086,6 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@fontsource/baloo-2@^4.5.4":
-  version "4.5.10"
-  resolved "https://registry.yarnpkg.com/@fontsource/baloo-2/-/baloo-2-4.5.10.tgz#4584ea67b885a1ff574d3f174e5d10ad5a2b9991"
-  integrity sha512-95pLC8aalvM1cO20pk4iOya8a7WKBolA5dfOv8GJNKMcpfmLum6dJgedt7BkNM1br06Mm3igkFy+XDaX2dmm6Q==
-
-"@fontsource/comfortaa@^4.5.4":
-  version "4.5.10"
-  resolved "https://registry.yarnpkg.com/@fontsource/comfortaa/-/comfortaa-4.5.10.tgz#1635ef0b9f6ca245c8ccfeebca5cd36d5e753f80"
-  integrity sha512-SrxPtznrGRFGhDziR0ozCFBcZ9kfJ5w3op12vtp3kLfSJke8CV8GXwZ1bVRaa7sN1uAbMXVCjKZZSaJofZcB/Q==
-
 "@fontsource/poppins@^4.5.10":
   version "4.5.10"
   resolved "https://registry.yarnpkg.com/@fontsource/poppins/-/poppins-4.5.10.tgz#44dbfeacb5d89efca5ad7ad6cc941b2ac1ee424b"
@@ -1105,6 +1095,11 @@
   version "4.5.8"
   resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-4.5.8.tgz#56347764786079838faf43f0eeda22dd7328437f"
   integrity sha512-CnD7zLItIzt86q4Sj3kZUiLcBk1dSk81qcqgMGaZe7SQ1P8hFNxhMl5AZthK1zrDM5m74VVhaOpuMGIL4gagaA==
+
+"@fontsource/rubik-maze@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/rubik-maze/-/rubik-maze-4.5.0.tgz#4473efe19f68ac90192cd8cd82da8867eb611f33"
+  integrity sha512-3z2qje0aP3scOOjMdCVAgF0/0UWT5nrg0RPlUgVsZqMGkWWpGrtxSdAIW/7kQ3udGiej5gExweq5x+8OvCSiYQ==
 
 "@gatsbyjs/parcel-namer-relative-to-cwd@1.9.0":
   version "1.9.0"

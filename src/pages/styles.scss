@@ -34,10 +34,6 @@ body {
 			padding: 64px;
 		}
 
-		@include bp($bp-xl) {
-			padding: 64px 96px;
-		}
-
 		@include bp($bp-l) {
 			padding: 96px 128px;
 		}
@@ -52,6 +48,20 @@ body {
 			mask-repeat: repeat-x;
 			mask-size: 40px 20px;
 			background-color: $gray-800;
+		}
+	}
+
+	.name-title-container {
+		width: 100%;
+		overflow: hidden;
+
+		.name-title {
+			color: rgba($yellow-600, 0.08);
+			margin: 0 -32px 0 -8px;
+
+			@include bp($bp-s, $bp-m) {
+				margin: 0 -32px 0 -24px;
+			}
 		}
 	}
 
