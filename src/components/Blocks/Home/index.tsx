@@ -91,6 +91,7 @@ const Home = () => {
 				))}
 				<Hex />
 				<Hex />
+				<Hex />
 				<Hex style={{ opacity: 0 }} />
 				<Hex style={{ opacity: 0 }} />
 				<Hex style={{ opacity: 0 }} />
