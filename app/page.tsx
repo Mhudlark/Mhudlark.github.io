@@ -1,6 +1,6 @@
 import { BouncingDVD } from "@/components/bouncing-dvd";
 import { ThemeToggle } from "@/components/theme-toggle";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Brain } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -15,9 +15,14 @@ export default function Home() {
             <h1 className="text-4xl font-bold tracking-tight">Hugh Henry</h1>
             <ThemeToggle />
           </div>
-          <p className="text-lg text-muted-foreground mb-6">
-            Developer. Dog lover. Tracksuit wearer.
-          </p>
+          <div className="text-lg text-muted-foreground dark:text-foreground/90 mb-6">
+            <ul className="m-0 list-none">
+              <li>Curious</li>
+              <li>Honest</li>
+              <li>Analytical</li>
+              <li>Developer</li>
+            </ul>
+          </div>
           <nav className="flex gap-4">
             <Link
               href="https://github.com/Mhudlark"
@@ -38,6 +43,15 @@ export default function Home() {
               <span className="sr-only">LinkedIn</span>
             </Link>
             <Link
+              href="https://www.16personalities.com/intp-personality"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Brain className="w-5 h-5" />
+              <span className="sr-only">Myers–Briggs (INTP)</span>
+            </Link>
+            <Link
               href="mailto:hughcthenry@gmail.com"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
@@ -50,11 +64,7 @@ export default function Home() {
         {/* About Section */}
         <section className="mb-16">
           <h2 className="text-2xl font-semibold mb-4">About Me</h2>
-          <div className="space-y-4 text-muted-foreground leading-relaxed">
-            <p>
-              The title says it all. I&apos;m a developer, I love dogs, and I
-              wear tracksuits.
-            </p>
+          <div className="space-y-4 text-muted-foreground dark:text-foreground/90 leading-relaxed">
             <p>
               As a developer I&apos;ve worked with a variety of languages and
               frameworks, but I&apos;m most experienced in web development,
@@ -73,11 +83,14 @@ export default function Home() {
         {/* My Work Section */}
         <section className="mb-16">
           <h2 className="text-2xl font-semibold mb-6">My Work</h2>
-          <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
+          <div className="space-y-4 text-muted-foreground dark:text-foreground/90 leading-relaxed mb-8">
             <p>
-              I&apos;ve worked on consulting projects with 15+ people on the
-              team, and I&apos;ve also worked on smaller projects where I
-              regularly interacted with clients directly.
+              I have commercial experience building out web apps for clients
+              across a variety of industries including insurance, tourism,
+              agriculture, and technology. I&apos;ve worked in large teams and
+              also as a one-person show. My core experience has been with
+              React.js, Typescript applications but I&apos;ve also dabbled in
+              Node.js, python, postgres, R and more.
             </p>
             <p>
               Please have a look at my{" "}
@@ -100,19 +113,16 @@ export default function Home() {
           <div className="space-y-8">
             {/* TimeFlies */}
             <article className="rounded-lg border border-border bg-card/50 backdrop-blur-sm overflow-hidden">
-              <div className="aspect-video relative">
+              <div className="aspect-video relative p-4">
                 <img
                   src="/images/projects/time-flies-1.png"
                   alt="TimeFlies app screenshot"
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain rounded-sm"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">TimeFlies</h3>
-                <p className="text-muted-foreground text-sm mb-3">
-                  Jan 2023 - Present
-                </p>
-                <ul className="space-y-2 text-muted-foreground text-sm">
+                <ul className="space-y-2 text-foreground/90 dark:text-foreground text-sm">
                   <li>Plan events and meetings — create and share a plan</li>
                   <li>
                     Collect availability from participants and pick a time
@@ -124,16 +134,16 @@ export default function Home() {
 
             {/* MLVET */}
             <article className="rounded-lg border border-border bg-card/50 backdrop-blur-sm overflow-hidden">
-              <div className="aspect-video relative">
+              <div className="aspect-video relative p-4">
                 <img
                   src="/images/projects/mlvet/MLVET.png"
                   alt="MLVET Editor page"
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain rounded-sm"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-4">MLVET</h3>
-                <ul className="space-y-2 text-muted-foreground text-sm">
+                <ul className="space-y-2 text-foreground/90 dark:text-foreground text-sm">
                   <li>Desktop video editing tool</li>
                   <li>ML cloud and local transcription of video content</li>
                   <li>Edit the transcription to edit the output video</li>
@@ -145,33 +155,33 @@ export default function Home() {
 
             {/* Lah */}
             <article className="rounded-lg border border-border bg-card/50 backdrop-blur-sm overflow-hidden">
-              <div className="grid grid-cols-3 gap-1">
+              <div className="grid grid-cols-3 gap-1 p-2">
                 <img
                   src="/images/projects/lah/screenshot1.png"
                   alt="Lah gameplay screenshot 1"
-                  className="w-full h-full object-contain aspect-[9/16]"
+                  className="w-full h-full object-contain aspect-9/16 rounded-sm"
                 />
                 <img
                   src="/images/projects/lah/screenshot2.png"
                   alt="Lah gameplay screenshot 2"
-                  className="w-full h-full object-contain aspect-[9/16]"
+                  className="w-full h-full object-contain aspect-9/16 rounded-sm"
                 />
                 <img
                   src="/images/projects/lah/screenshot3.png"
                   alt="Lah gameplay screenshot 3"
-                  className="w-full h-full object-contain aspect-[9/16]"
+                  className="w-full h-full object-contain aspect-9/16 rounded-sm"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-4">Lah</h3>
-                <p className="text-muted-foreground text-sm mb-4">
+                <p className="text-muted-foreground dark:text-foreground/90 text-sm mb-4">
                   Lah is a mobile game hosted on the Google Play Store. It is a
                   2D platformer/endless jumping game where players must climb
                   blocks to evade the lava rising from below. The game is
                   written in C# and was built using Unity.
                 </p>
                 <h4 className="font-medium text-sm mb-2">Challenges I faced</h4>
-                <ul className="space-y-1 text-muted-foreground text-sm list-disc list-inside">
+                <ul className="space-y-1 text-muted-foreground dark:text-foreground/90 text-sm list-disc list-inside">
                   <li>Collision detection using raytracing</li>
                   <li>Music creation</li>
                   <li>UI and sprite design</li>
@@ -182,16 +192,16 @@ export default function Home() {
 
             {/* My Game of Life */}
             <article className="rounded-lg border border-border bg-card/50 backdrop-blur-sm overflow-hidden">
-              <div className="aspect-video relative">
+              <div className="aspect-video relative p-4">
                 <img
                   src="/images/projects/game-of-life-1.png"
                   alt="Game of Life simulation screenshot"
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain rounded-sm"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">My Game of Life</h3>
-                <ul className="space-y-2 text-muted-foreground text-sm">
+                <ul className="space-y-2 text-muted-foreground dark:text-foreground/90 text-sm">
                   <li>Conway's Game of Life and several variations</li>
                   <li>Custom rule sets and evolving rules over time</li>
                   <li>
@@ -205,7 +215,7 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="pt-8 border-t border-border">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-foreground/80 dark:text-foreground">
             © {new Date().getFullYear()} Hugh Henry. Built with Next.js.
           </p>
         </footer>
